@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>Đăng kí thiết bị :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
     <link href="/css/nucleus.css?1728354237" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/2-aws_iot_core/2.1-register_new_thing/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -161,7 +161,7 @@
   
     
     <li data-nav-id="/2-aws_iot_core/" title="AWS IoT Core" class="dd-item 
-        
+        parent
         
         
         ">
@@ -193,7 +193,7 @@
     
     <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
@@ -257,22 +257,10 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/tags/" selected>English</option>
+                      <option id="en" value="//localhost:1313/2-aws_iot_core/2.1-register_new_thing/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="vi" value="//localhost:1313/vi/tags/">Tiếng Việt</option>
-                    
                   
               
           
@@ -355,7 +343,13 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > Tags
+            
+            
+          
+          
+            <a href='/'>Giới thiệu</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > Đăng kí thiết bị
+          
+        
           
         
           
@@ -366,7 +360,19 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-chúng-ta-tuy-cập-vào-aws-iot-corehttpsconsoleawsamazoncomiothomeregionus-east-1dashboard-và-chọn-create-thing">1. Chúng ta tuy cập vào <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard">AWS IoT Core</a> và chọn <strong>Create thing</strong>.</a></li>
+        <li><a href="#2-điền-thông-tin-về-thiết-bị-của-bạn-ở-đây-mình-điền-thông-tin-như-sau">2. Điền thông tin về thiết bị của bạn. Ở đây mình điền thông tin như sau:</a></li>
+        <li><a href="#3-tạo-certificates">3. Tạo Certificates.</a></li>
+        <li><a href="#4-attach-a-policy">4. Attach a policy.</a></li>
+        <li><a href="#5-sau-khi-tạo-chúng-ta-hãy-tải-các-file-certificates-về-máy">5. Sau khi tạo chúng ta hãy tải các file Certificates về máy.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -382,9 +388,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Tags
+              Đăng kí thiết bị
             </h1>
           
 
@@ -392,11 +396,34 @@
 
 
 
-
-
+	<p>Bước đầu tiên để sử dụng AWS IoT Core là chúng ta cần đăng kí một thiết bị. Trong trường hợp của chúng ta thì đó là ESP32.</p>
+<h3 id="1-chúng-ta-tuy-cập-vào-aws-iot-corehttpsconsoleawsamazoncomiothomeregionus-east-1dashboard-và-chọn-create-thing">1. Chúng ta tuy cập vào <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard">AWS IoT Core</a> và chọn <strong>Create thing</strong>.</h3>
+<p><img alt="Overview" src="/images/11.png"></p>
+<h3 id="2-điền-thông-tin-về-thiết-bị-của-bạn-ở-đây-mình-điền-thông-tin-như-sau">2. Điền thông tin về thiết bị của bạn. Ở đây mình điền thông tin như sau:</h3>
+<p>Ở đây ngoài tên thì còn có nhiều thông tin khác như:</p>
 <ul>
-	
+<li>Thing type: Loại thiết bị.</li>
+<li>Thing group: Nhóm thiết bị.</li>
+<li>Billing group: Nhóm thanh toán.</li>
+<li>Packages and versions: Phiên bản và gói.</li>
 </ul>
+<p>Những thông tin này sẽ giúp bạn quản lý thiết bị của mình một cách dễ dàng hơn trong trường hợp bạn có nhiều thiết bị.</p>
+<p>Ở đây mình điền tên thiết bị + mã số thiết bị.</p>
+<p>Sau đó các bạn chọn <strong>Next</strong>.</p>
+<p><img alt="Overview" src="/images/12.png"></p>
+<h3 id="3-tạo-certificates">3. Tạo Certificates.</h3>
+<p>Để đảm bảo thông tin gửi đi và nhận về an toàn, chúng ta cần tạo Certificates cho thiết bị.</p>
+<p>Ở đây mình chọn <strong>Auto-generate a new certificate</strong> và chọn <strong>Next</strong>.</p>
+<p><img alt="Overview" src="/images/13.png"></p>
+<h3 id="4-attach-a-policy">4. Attach a policy.</h3>
+<p>Chúng ta sẽ tạo policy sau, ở bước này chúng ta chọn <strong>Create thing</strong></p>
+<p><img alt="Overview" src="/images/14.png"></p>
+<h3 id="5-sau-khi-tạo-chúng-ta-hãy-tải-các-file-certificates-về-máy">5. Sau khi tạo chúng ta hãy tải các file Certificates về máy.</h3>
+<p><img alt="Overview" src="/images/15.png"></p>
+<p><img alt="Overview" src="/images/16.png"></p>
+
+
+
 
 
 <footer class=" footline" >
@@ -485,6 +512,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -499,6 +527,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -522,6 +551,8 @@
 
 	 
 	 
+		
+			<a class="nav nav-prev" href="/2-aws_iot_core/" title="AWS IoT Core"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/1-prepare_resource/" title="Chuẩn bị tài nguyên" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>

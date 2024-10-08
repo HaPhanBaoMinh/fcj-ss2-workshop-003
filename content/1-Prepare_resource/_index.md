@@ -2,7 +2,7 @@
 title: "Chuẩn bị tài nguyên"
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: "<b> 1. </b>"
 ---
 
 ![Overview](/images/01.png)
