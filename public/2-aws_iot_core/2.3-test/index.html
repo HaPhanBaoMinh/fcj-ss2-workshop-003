@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>MQTT test client :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1728909627" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1728909627" rel="stylesheet">
-    <link href="/css/hybrid.css?1728909627" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1728909627" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1728909627" rel="stylesheet">
-    <link href="/css/auto-complete.css?1728909627" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1728909627" rel="stylesheet">
-    <link href="/css/theme.css?1728909627" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1728909627" rel="stylesheet">
+    <link href="/css/nucleus.css?1728915643" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1728915643" rel="stylesheet">
+    <link href="/css/hybrid.css?1728915643" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1728915643" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1728915643" rel="stylesheet">
+    <link href="/css/auto-complete.css?1728915643" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1728915643" rel="stylesheet">
+    <link href="/css/theme.css?1728915643" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1728915643" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1728909627" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1728915643" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1728909627"></script>
+    <script src="/js/jquery-3.3.1.min.js?1728915643"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/2-aws_iot_core/2.3-test/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1728909627"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1728909627"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1728915643"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1728915643"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1728909627"></script>
+<script type="text/javascript" src="/js/search.js?1728915643"></script>
 
     
   </div>
@@ -161,7 +161,7 @@
   
     
     <li data-nav-id="/2-aws_iot_core/" title="AWS IoT Core" class="dd-item 
-        
+        parent
         
         
         ">
@@ -198,6 +198,62 @@
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
            <b> 2.1. </b> Đăng kí thiết bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-aws_iot_core/2.2-create_policies/">
+           <b> 2.2. </b> Tạo policy
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-aws_iot_core/2.3-test/" title="MQTT test client" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/2-aws_iot_core/2.3-test/">
+           <b> 2.3. </b> MQTT test client
           
             <i class="fas fa-check read-icon"></i>
           
@@ -257,22 +313,10 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/categories/" selected>English</option>
+                      <option id="en" value="//localhost:1313/2-aws_iot_core/2.3-test/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="vi" value="//localhost:1313/vi/categories/">Tiếng Việt</option>
-                    
                   
               
           
@@ -355,7 +399,13 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > Categories
+            
+            
+          
+          
+            <a href='/'>Giới thiệu</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > MQTT test client
+          
+        
           
         
           
@@ -366,7 +416,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-ở-màn-hình-console-chúng-ta-chọn-mqtt-test-client">1. Ở màn hình console chúng ta chọn <strong>MQTT test client</strong>.</a></li>
+        <li><a href="#2-chúng-ta-sẽ-test-bằng-cách-publish-một-message-lên-topic-test">2. Chúng ta sẽ test bằng cách publish một message lên topic <strong>test</strong>.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -382,9 +441,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Categories
+              MQTT test client
             </h1>
           
 
@@ -392,11 +449,22 @@
 
 
 
+	<p>Chúng ta sẽ sử dụng MQTT test client để test kết nối giữa thiết bị và AWS IoT Core.</p>
+<h3 id="1-ở-màn-hình-console-chúng-ta-chọn-mqtt-test-client">1. Ở màn hình console chúng ta chọn <strong>MQTT test client</strong>.</h3>
+<p><img alt="Overview" src="/images/23.png"></p>
+<p>Ở đây chúng ta điền thông tin topic là <strong>test</strong> và chọn <strong>Subscribe to topic</strong>.</p>
+<p>Kéo xuống dưới chúng ta sẽ thấy một khung hiển thị message, hiện tại chúng ta chưa nhận được message nào.</p>
+<p><img alt="Overview" src="/images/25.png"></p>
+<p>Bây giờ chúng ta đang lắng nghe tất cả các message từ topic <strong>test</strong> mỗi khi có message được publish lên topic <strong>test</strong> thì chúng ta sẽ nhận được message đó.</p>
+<h3 id="2-chúng-ta-sẽ-test-bằng-cách-publish-một-message-lên-topic-test">2. Chúng ta sẽ test bằng cách publish một message lên topic <strong>test</strong>.</h3>
+<p>Chúng ta sẽ gửi một message lên topic <strong>test</strong>, với nội dung là <strong>Hello from AWS IoT console</strong> và chọn <strong>Publish</strong>.</p>
+<p><img alt="Overview" src="/images/24.png"></p>
+<p>Sau khi publish chúng ta sẽ nhận được message mà chúng ta vừa publish ở tab <strong>Subscribe to a topic</strong>.</p>
+<p><img alt="Overview" src="/images/26.png"></p>
+<p>OK good job!</p>
 
 
-<ul>
-	
-</ul>
+
 
 
 <footer class=" footline" >
@@ -485,6 +553,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -499,6 +568,42 @@
             
             
                 
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -523,8 +628,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/1-prepare_resource/" title="Chuẩn bị tài nguyên" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -534,19 +641,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1728909627"></script>
-    <script src="/js/perfect-scrollbar.min.js?1728909627"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1728909627"></script>
-    <script src="/js/jquery.sticky.js?1728909627"></script>
-    <script src="/js/featherlight.min.js?1728909627"></script>
-    <script src="/js/highlight.pack.js?1728909627"></script>
+    <script src="/js/clipboard.min.js?1728915643"></script>
+    <script src="/js/perfect-scrollbar.min.js?1728915643"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1728915643"></script>
+    <script src="/js/jquery.sticky.js?1728915643"></script>
+    <script src="/js/featherlight.min.js?1728915643"></script>
+    <script src="/js/highlight.pack.js?1728915643"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1728909627"></script>
-    <script src="/js/learn.js?1728909627"></script>
-    <script src="/js/hugo-learn.js?1728909627"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1728915643"></script>
+    <script src="/js/learn.js?1728915643"></script>
+    <script src="/js/hugo-learn.js?1728915643"></script>
 
-    <link href="/mermaid/mermaid.css?1728909627" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1728909627"></script>
+    <link href="/mermaid/mermaid.css?1728915643" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1728915643"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

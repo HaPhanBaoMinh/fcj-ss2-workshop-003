@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>Tạo policy :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1728909627" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1728909627" rel="stylesheet">
-    <link href="/css/hybrid.css?1728909627" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1728909627" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1728909627" rel="stylesheet">
-    <link href="/css/auto-complete.css?1728909627" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1728909627" rel="stylesheet">
-    <link href="/css/theme.css?1728909627" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1728909627" rel="stylesheet">
+    <link href="/css/nucleus.css?1728915112" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1728915112" rel="stylesheet">
+    <link href="/css/hybrid.css?1728915112" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1728915112" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1728915112" rel="stylesheet">
+    <link href="/css/auto-complete.css?1728915112" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1728915112" rel="stylesheet">
+    <link href="/css/theme.css?1728915112" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1728915112" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1728909627" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1728915112" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1728909627"></script>
+    <script src="/js/jquery-3.3.1.min.js?1728915112"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/2-aws_iot_core/2.2-create_policies-copy/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1728909627"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1728909627"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1728915112"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1728915112"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1728909627"></script>
+<script type="text/javascript" src="/js/search.js?1728915112"></script>
 
     
   </div>
@@ -161,7 +161,7 @@
   
     
     <li data-nav-id="/2-aws_iot_core/" title="AWS IoT Core" class="dd-item 
-        
+        parent
         
         
         ">
@@ -198,6 +198,62 @@
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
            <b> 2.1. </b> Đăng kí thiết bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies-copy/" title="Tạo policy" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/2-aws_iot_core/2.2-create_policies-copy/">
+           <b> 2.2. </b> Tạo policy
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-aws_iot_core/2.2-create_policies/">
+           <b> 2.2. </b> Tạo policy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -257,22 +313,10 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/categories/" selected>English</option>
+                      <option id="en" value="//localhost:1313/2-aws_iot_core/2.2-create_policies-copy/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="vi" value="//localhost:1313/vi/categories/">Tiếng Việt</option>
-                    
                   
               
           
@@ -355,7 +399,13 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > Categories
+            
+            
+          
+          
+            <a href='/'>Giới thiệu</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > Tạo policy
+          
+        
           
         
           
@@ -366,7 +416,19 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-chúng-ta-chọn-create-a-policy">1. Chúng ta chọn <strong>Create a policy</strong>.</a></li>
+        <li><a href="#2-điền-thông-tin-về-policy-của-bạn">2. Điền thông tin về policy của bạn.</a></li>
+        <li><a href="#3-sau-khi-tạo-chúng-ta-sẽ-thấy-policy-của-mình">3. Sau khi tạo chúng ta sẽ thấy policy của mình.</a></li>
+        <li><a href="#4-tiếp-theo-chúng-ta-sẽ-gắn-policy-này-với-certificate-mà-chúng-ta-đã-tạo-ở-bước-trước">4. Tiếp theo chúng ta sẽ gắn policy này với certificate mà chúng ta đã tạo ở bước trước.</a></li>
+        <li><a href="#5-sau-khi-gắn-policy-chúng-ta-sẽ-thấy-policy-đã-được-gắn-với-certificate">5. Sau khi gắn policy chúng ta sẽ thấy policy đã được gắn với certificate.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -382,9 +444,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Categories
+              Tạo policy
             </h1>
           
 
@@ -392,11 +452,31 @@
 
 
 
-
-
+	<p>Tiếp theo chúng ta sẽ tạo policy cho các &ldquo;&ldquo;things&rdquo;&rdquo; mà chúng ta đã tạo ở bước trước có thể truy cập các AWS IoT Core resources.</p>
+<h3 id="1-chúng-ta-chọn-create-a-policy">1. Chúng ta chọn <strong>Create a policy</strong>.</h3>
+<p><img alt="Overview" src="/images/17.png"></p>
+<h3 id="2-điền-thông-tin-về-policy-của-bạn">2. Điền thông tin về policy của bạn.</h3>
+<p>Ở đây mình điền thông tin như sau:</p>
 <ul>
-	
+<li>Policy Name: Tên của policy.</li>
+<li>Plicy effect: Chúng ta chọn <strong>Allow</strong> - cho phép.</li>
+<li>Policy action: Chúng ta chọn <strong>iot:</strong>* - cho phép tất cả các action trong AWS IoT Core.</li>
+<li>Resource ARN: Chúng ta chọn <strong>All resources</strong> - cho phép tất cả các resources trong AWS IoT Core.</li>
 </ul>
+<p>Sau đó chúng ta chọn <strong>Create</strong>.</p>
+<p><img alt="Overview" src="/images/18.png"></p>
+<h3 id="3-sau-khi-tạo-chúng-ta-sẽ-thấy-policy-của-mình">3. Sau khi tạo chúng ta sẽ thấy policy của mình.</h3>
+<p><img alt="Overview" src="/images/19.png"></p>
+<h3 id="4-tiếp-theo-chúng-ta-sẽ-gắn-policy-này-với-certificate-mà-chúng-ta-đã-tạo-ở-bước-trước">4. Tiếp theo chúng ta sẽ gắn policy này với certificate mà chúng ta đã tạo ở bước trước.</h3>
+<p>Chúng ta vào <strong>Certificates</strong> và chọn <strong>Attach policy</strong>.</p>
+<p><img alt="Overview" src="/images/20.png"></p>
+<p>Chúng ta chọn policy mà chúng ta vừa tạo và chọn <strong>Attach polices</strong>.</p>
+<p><img alt="Overview" src="/images/21.png"></p>
+<h3 id="5-sau-khi-gắn-policy-chúng-ta-sẽ-thấy-policy-đã-được-gắn-với-certificate">5. Sau khi gắn policy chúng ta sẽ thấy policy đã được gắn với certificate.</h3>
+<p><img alt="Overview" src="/images/22.png"></p>
+
+
+
 
 
 <footer class=" footline" >
@@ -485,6 +565,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -499,6 +580,45 @@
             
             
                 
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -523,8 +643,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/1-prepare_resource/" title="Chuẩn bị tài nguyên" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -534,19 +656,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1728909627"></script>
-    <script src="/js/perfect-scrollbar.min.js?1728909627"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1728909627"></script>
-    <script src="/js/jquery.sticky.js?1728909627"></script>
-    <script src="/js/featherlight.min.js?1728909627"></script>
-    <script src="/js/highlight.pack.js?1728909627"></script>
+    <script src="/js/clipboard.min.js?1728915112"></script>
+    <script src="/js/perfect-scrollbar.min.js?1728915112"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1728915112"></script>
+    <script src="/js/jquery.sticky.js?1728915112"></script>
+    <script src="/js/featherlight.min.js?1728915112"></script>
+    <script src="/js/highlight.pack.js?1728915112"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1728909627"></script>
-    <script src="/js/learn.js?1728909627"></script>
-    <script src="/js/hugo-learn.js?1728909627"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1728915112"></script>
+    <script src="/js/learn.js?1728915112"></script>
+    <script src="/js/hugo-learn.js?1728915112"></script>
 
-    <link href="/mermaid/mermaid.css?1728909627" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1728909627"></script>
+    <link href="/mermaid/mermaid.css?1728915112" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1728915112"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

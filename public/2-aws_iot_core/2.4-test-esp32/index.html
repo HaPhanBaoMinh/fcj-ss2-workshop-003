@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Cài đặt ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>MQTT test ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
     <link href="/css/nucleus.css?1728921366" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/1-prepare_resource/1.1-esp34/">
+  <body class="" data-url="/2-aws_iot_core/2.4-test-esp32/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/1-prepare_resource/" title="Chuẩn bị tài nguyên" class="dd-item 
-        parent
+        
         
         
         ">
@@ -111,7 +111,7 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item active">
+      <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item ">
         <a href="/1-prepare_resource/1.1-esp34/">
          <b> 1.1. </b> Cài đặt ESP32
         <i class="fas fa-check read-icon"></i>
@@ -161,7 +161,7 @@
   
     
     <li data-nav-id="/2-aws_iot_core/" title="AWS IoT Core" class="dd-item 
-        
+        parent
         
         
         ">
@@ -277,7 +277,7 @@
     
     <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT test ESP32" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/2-aws_iot_core/2.4-test-esp32/">
@@ -341,7 +341,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/1-prepare_resource/1.1-esp34/" selected>English</option>
+                      <option id="en" value="//localhost:1313/2-aws_iot_core/2.4-test-esp32/" selected>English</option>
                     
                   
               
@@ -431,7 +431,7 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > <a href='/1-prepare_resource/'>Chuẩn bị tài nguyên</a> > Cài đặt ESP32
+            <a href='/'>Giới thiệu</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > MQTT test ESP32
           
         
           
@@ -446,8 +446,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#wokwi">WOKWI</a></li>
-    <li><a href="#setup-thiết-bị">Setup thiết bị</a></li>
+    <li>
+      <ul>
+        <li><a href="#1-đầu-tiên-chúng-ta-cần-lấy-thông-tin-về-endpoint-của-mqtt-broker">1. Đầu tiên chúng ta cần lấy thông tin về endpoint của MQTT broker.</a></li>
+        <li><a href="#2-ở-file-mainpy-chúng-ta-điền-thông-tin-như-sau">2. Ở file main.py chúng ta điền thông tin như sau</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -465,84 +469,140 @@
           
             <h1>
               
-              Cài đặt ESP32
+              MQTT test ESP32
             </h1>
           
 
         
 
 
-<p><img alt="Overview" src="/images/02.png"></p>
-<h2 id="wokwi">WOKWI</h2>
-<p>Trong bài lab này, chúng ta sẽ sử dụng Wokwi để mô phỏng việc thu thập dữ liệu từ cảm biến nhiệt độ và độ ẩm DHT11 và gửi dữ liệu lên AWS IoT Core thông qua giao thức MQTT.</p>
-<h2 id="setup-thiết-bị">Setup thiết bị</h2>
-<p>Sau khi đã ta đã có tài khoản trên Wokwi, chúng ta tiến hành tạo một project mới.</p>
-<ol>
-<li>Truy cập vào trang chủ của Wokwi: <a href="https://wokwi.com/">https://wokwi.com/</a></li>
-<li>Đăng nhập vào tài khoản của bạn.</li>
-<li>Tạo một project mới bằng cách chọn <code>New Project</code>.</li>
-</ol>
-<p><img alt="Overview" src="/images/03.png"></p>
-<ol start="4">
-<li>Chọn <code>ESP32</code> từ danh sách các linh kiện.</li>
-</ol>
-<p><img alt="Overview" src="/images/04.png"></p>
-<ol start="5">
-<li>Chọn <code>MicroPython</code>.</li>
-</ol>
-<p><img alt="Overview" src="/images/05.png"></p>
-<ol start="6">
-<li>Chọn <code>diagram.json</code> và paste nội dung sau vào:</li>
-</ol>
-<p><img alt="Overview" src="/images/06.png"></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;Anonymous maker&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;editor&#34;</span>: <span style="color:#e6db74">&#34;wokwi&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;parts&#34;</span>: [
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;wokwi-esp32-devkit-v1&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;esp&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;top&#34;</span>: <span style="color:#ae81ff">137.33</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;left&#34;</span>: <span style="color:#ae81ff">-18.01</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;rotate&#34;</span>: <span style="color:#ae81ff">270</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;attrs&#34;</span>: {}
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;wokwi-lcd1602&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;lcd1&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;top&#34;</span>: <span style="color:#ae81ff">18.67</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;left&#34;</span>: <span style="color:#ae81ff">76</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;attrs&#34;</span>: { <span style="color:#f92672">&#34;pins&#34;</span>: <span style="color:#e6db74">&#34;i2c&#34;</span> }
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    { <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;wokwi-resistor&#34;</span>, <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;r1&#34;</span>, <span style="color:#f92672">&#34;top&#34;</span>: <span style="color:#ae81ff">113.34</span>, <span style="color:#f92672">&#34;left&#34;</span>: <span style="color:#ae81ff">-106.01</span>, <span style="color:#f92672">&#34;attrs&#34;</span>: {} },
-</span></span><span style="display:flex;"><span>    { <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;wokwi-resistor&#34;</span>, <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;r2&#34;</span>, <span style="color:#f92672">&#34;top&#34;</span>: <span style="color:#ae81ff">130.67</span>, <span style="color:#f92672">&#34;left&#34;</span>: <span style="color:#ae81ff">-106.68</span>, <span style="color:#f92672">&#34;attrs&#34;</span>: {} },
-</span></span><span style="display:flex;"><span>    { <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;wokwi-dht22&#34;</span>, <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;dht1&#34;</span>, <span style="color:#f92672">&#34;top&#34;</span>: <span style="color:#ae81ff">182.7</span>, <span style="color:#f92672">&#34;left&#34;</span>: <span style="color:#ae81ff">205.8</span>, <span style="color:#f92672">&#34;attrs&#34;</span>: {} }
-</span></span><span style="display:flex;"><span>  ],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;connections&#34;</span>: [
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;esp:TX0&#34;</span>, <span style="color:#e6db74">&#34;$serialMonitor:RX&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, [] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;esp:RX0&#34;</span>, <span style="color:#e6db74">&#34;$serialMonitor:TX&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, [] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;lcd1:SCL&#34;</span>, <span style="color:#e6db74">&#34;esp:D22&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;h0&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;lcd1:SDA&#34;</span>, <span style="color:#e6db74">&#34;esp:D21&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;h0&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;lcd1:VCC&#34;</span>, <span style="color:#e6db74">&#34;esp:3V3&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, [ <span style="color:#e6db74">&#34;h-30&#34;</span>, <span style="color:#e6db74">&#34;v103&#34;</span>, <span style="color:#e6db74">&#34;h41&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;lcd1:GND&#34;</span>, <span style="color:#e6db74">&#34;esp:GND.1&#34;</span>, <span style="color:#e6db74">&#34;black&#34;</span>, [ <span style="color:#e6db74">&#34;h-39&#34;</span>, <span style="color:#e6db74">&#34;v123&#34;</span>, <span style="color:#e6db74">&#34;h31&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;r2:2&#34;</span>, <span style="color:#e6db74">&#34;esp:D22&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;v1&#34;</span>, <span style="color:#e6db74">&#34;h9&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;r1:2&#34;</span>, <span style="color:#e6db74">&#34;esp:D21&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;v0&#34;</span>, <span style="color:#e6db74">&#34;h37&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;r2:1&#34;</span>, <span style="color:#e6db74">&#34;r1:1&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;v0&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;r1:1&#34;</span>, <span style="color:#e6db74">&#34;lcd1:VCC&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;v0&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;dht1:VCC&#34;</span>, <span style="color:#e6db74">&#34;esp:3V3&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, [ <span style="color:#e6db74">&#34;v0&#34;</span>, <span style="color:#e6db74">&#34;h-19.2&#34;</span>, <span style="color:#e6db74">&#34;v-134.4&#34;</span>, <span style="color:#e6db74">&#34;h-105.6&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;dht1:SDA&#34;</span>, <span style="color:#e6db74">&#34;esp:D15&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, [ <span style="color:#e6db74">&#34;v9.6&#34;</span>, <span style="color:#e6db74">&#34;h-38.3&#34;</span>, <span style="color:#e6db74">&#34;v-134.4&#34;</span>, <span style="color:#e6db74">&#34;h-119.01&#34;</span> ] ],
-</span></span><span style="display:flex;"><span>    [ <span style="color:#e6db74">&#34;dht1:GND&#34;</span>, <span style="color:#e6db74">&#34;esp:GND.2&#34;</span>, <span style="color:#e6db74">&#34;black&#34;</span>, [ <span style="color:#e6db74">&#34;v19.2&#34;</span>, <span style="color:#e6db74">&#34;h-172.8&#34;</span> ] ]
-</span></span><span style="display:flex;"><span>  ],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: {}
+
+	<p>Chúng ta sẽ sử dụng ESP32 để test kết nối giữa thiết bị và AWS IoT Core.</p>
+<h3 id="1-đầu-tiên-chúng-ta-cần-lấy-thông-tin-về-endpoint-của-mqtt-broker">1. Đầu tiên chúng ta cần lấy thông tin về endpoint của MQTT broker.</h3>
+<p>Chúng ta vào aws shell và chạy lệnh sau:</p>
+<pre><code>aws iot describe-endpoint
+</code></pre>
+<p>Ta sẽ nhận được thông tin như sau:</p>
+<p><img alt="Overview" src="/images/28.png"></p>
+<p>Đây là thông tin endpoint của MQTT broker mà chúng ta sẽ sử dụng để kết nối với AWS IoT Core.</p>
+<h3 id="2-ở-file-mainpy-chúng-ta-điền-thông-tin-như-sau">2. Ở file main.py chúng ta điền thông tin như sau</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> network
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> machine <span style="color:#f92672">import</span> Pin, I2C
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> dht
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> ujson
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> umqtt.simple <span style="color:#f92672">import</span> MQTTClient
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> i2c_lcd <span style="color:#f92672">import</span> I2cLcd  <span style="color:#75715e"># Import the custom I2C_LCD class</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> ussl <span style="color:#66d9ef">as</span> ssl
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MQTT Server Parameters</span>
+</span></span><span style="display:flex;"><span>MQTT_CLIENT_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ESP32-001&#34;</span>
+</span></span><span style="display:flex;"><span>MQTT_BROKER    <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a23sutvtpz6muq-ats.iot.ap-southeast-1.amazonaws.com&#34;</span>
+</span></span><span style="display:flex;"><span>MQTT_TOPIC     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;test&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DHT22 sensor setup</span>
+</span></span><span style="display:flex;"><span>sensor <span style="color:#f92672">=</span> dht<span style="color:#f92672">.</span>DHT22(Pin(<span style="color:#ae81ff">15</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># I2C and LCD setup (adjust the I2C address if necessary)</span>
+</span></span><span style="display:flex;"><span>i2c <span style="color:#f92672">=</span> I2C(<span style="color:#ae81ff">0</span>, sda<span style="color:#f92672">=</span>Pin(<span style="color:#ae81ff">21</span>), scl<span style="color:#f92672">=</span>Pin(<span style="color:#ae81ff">22</span>), freq<span style="color:#f92672">=</span><span style="color:#ae81ff">400000</span>)  <span style="color:#75715e"># SDA to pin 27, SCL to pin 26</span>
+</span></span><span style="display:flex;"><span>I2C_ADDR <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x27</span>  <span style="color:#75715e"># Default I2C address for the LCD</span>
+</span></span><span style="display:flex;"><span>lcd <span style="color:#f92672">=</span> I2cLcd(i2c, I2C_ADDR, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">16</span>)  <span style="color:#75715e"># Assuming a 16x2 LCD</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Private key and certificate (paste the contents here as strings)</span>
+</span></span><span style="display:flex;"><span>key_data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-----BEGIN RSA PRIVATE KEY-----
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-----END RSA PRIVATE KEY-----
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cert_data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-----BEGIN CERTIFICATE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-----END CERTIFICATE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ca_data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-----BEGIN CERTIFICATE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-----END CERTIFICATE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># WiFi connection</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Connecting to WiFi&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>sta_if <span style="color:#f92672">=</span> network<span style="color:#f92672">.</span>WLAN(network<span style="color:#f92672">.</span>STA_IF)
+</span></span><span style="display:flex;"><span>sta_if<span style="color:#f92672">.</span>active(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>sta_if<span style="color:#f92672">.</span>connect(<span style="color:#e6db74">&#39;Wokwi-GUEST&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> sta_if<span style="color:#f92672">.</span>isconnected():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;.&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.1</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34; Connected!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MQTT setup</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Connecting to MQTT server... &#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ssl_params <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;key&#39;</span>: key_data,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;cert&#39;</span>: cert_data,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;cadata&#39;</span>:ca_data
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><ol>
-<li>Kết quả:</li>
-</ol>
-<p><img alt="Overview" src="/images/07.png"></p>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> MQTTClient(
+</span></span><span style="display:flex;"><span>    MQTT_CLIENT_ID, 
+</span></span><span style="display:flex;"><span>    MQTT_BROKER, 
+</span></span><span style="display:flex;"><span>    ssl<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>    ssl_params<span style="color:#f92672">=</span>ssl_params,
+</span></span><span style="display:flex;"><span>    port<span style="color:#f92672">=</span><span style="color:#ae81ff">8883</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>client<span style="color:#f92672">.</span>connect()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Connected!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Display welcome message on LCD</span>
+</span></span><span style="display:flex;"><span>lcd<span style="color:#f92672">.</span>clear()
+</span></span><span style="display:flex;"><span>lcd<span style="color:#f92672">.</span>putstr(<span style="color:#e6db74">&#34;Weather Station&#34;</span>)
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>prev_weather <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Measuring weather conditions... &#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    sensor<span style="color:#f92672">.</span>measure() 
+</span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">=</span> sensor<span style="color:#f92672">.</span>temperature()
+</span></span><span style="display:flex;"><span>    humidity <span style="color:#f92672">=</span> sensor<span style="color:#f92672">.</span>humidity()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Format the message for MQTT</span>
+</span></span><span style="display:flex;"><span>    message <span style="color:#f92672">=</span> ujson<span style="color:#f92672">.</span>dumps({
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;temp&#34;</span>: temp,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;humidity&#34;</span>: humidity,
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Display temperature and humidity on the LCD</span>
+</span></span><span style="display:flex;"><span>    lcd<span style="color:#f92672">.</span>clear()
+</span></span><span style="display:flex;"><span>    lcd<span style="color:#f92672">.</span>putstr(<span style="color:#e6db74">&#34;Temp: </span><span style="color:#e6db74">{:.1f}</span><span style="color:#e6db74"> C&#34;</span><span style="color:#f92672">.</span>format(temp))
+</span></span><span style="display:flex;"><span>    lcd<span style="color:#f92672">.</span>move_to(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    lcd<span style="color:#f92672">.</span>putstr(<span style="color:#e6db74">&#34;Humidity: </span><span style="color:#e6db74">{:.1f}</span><span style="color:#e6db74">%&#34;</span><span style="color:#f92672">.</span>format(humidity))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Publish to MQTT if there is a change in the readings</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> message <span style="color:#f92672">!=</span> prev_weather:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Updated!&#34;</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Reporting to MQTT topic </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(MQTT_TOPIC, message))
+</span></span><span style="display:flex;"><span>        client<span style="color:#f92672">.</span>publish(MQTT_TOPIC, message)
+</span></span><span style="display:flex;"><span>        prev_weather <span style="color:#f92672">=</span> message
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;No change&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p>Khi chúng ta chạy file main.py trên ESP32 thì chúng ta sẽ thấy thông tin về nhiệt độ và độ ẩm được hiển thị trên LCD và cũng được publish lên topic <strong>test</strong> trên AWS IoT Core.</p>
+<p><img alt="Overview" src="/images/29.png"></p>
+<p>Chúng ta kiểm tra trên MQTT test client thì chúng ta sẽ thấy message được publish lên topic <strong>test</strong>.</p>
+<p><img alt="Overview" src="/images/30.png"></p>
+<p>Good job!</p>
+<p>Bây giờ bạn có thể đổi thông tin topic và publish message khác lên topic đó.</p>
 
 
-<footer class="footline">
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -577,37 +637,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -615,27 +644,6 @@
                 
 
                     
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
                     
                     
 
@@ -672,6 +680,44 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -692,6 +738,23 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -716,10 +779,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/1-prepare_resource/" title="Chuẩn bị tài nguyên"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-aws_iot_core/2.3-test-client/" title="MQTT test client"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -757,4 +820,3 @@
 </script>
   </body>
 </html>
-

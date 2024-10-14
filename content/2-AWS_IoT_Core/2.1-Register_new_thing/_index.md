@@ -10,7 +10,6 @@ Bước đầu tiên để sử dụng AWS IoT Core là chúng ta cần đăng k
 ### 1. Chúng ta tuy cập vào [AWS IoT Core](https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard) và chọn **Create thing**.
 
 ![Overview](/images/11.png)
-
 ### 2. Điền thông tin về thiết bị của bạn. Ở đây mình điền thông tin như sau:
 
 Ở đây ngoài tên thì còn có nhiều thông tin khác như:
