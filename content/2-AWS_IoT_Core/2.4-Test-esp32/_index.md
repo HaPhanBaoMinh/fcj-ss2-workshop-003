@@ -20,7 +20,7 @@ Ta sẽ nhận được thông tin như sau:
 
 Đây là thông tin endpoint của MQTT broker mà chúng ta sẽ sử dụng để kết nối với AWS IoT Core.
 
-### 2. Ở file main.py chúng ta điền thông tin như sau
+### 2. Ở file main.py chúng ta điền thông tin cert như sau:
 
 ```python
 import network
@@ -105,11 +105,15 @@ while True:
     sensor.measure() 
     temp = sensor.temperature()
     humidity = sensor.humidity()
+
+    timestamp = time.time()
     
     # Format the message for MQTT
     message = ujson.dumps({
         "temp": temp,
         "humidity": humidity,
+        "device_id": device_id,
+        "timestamp": timestamp
     })
     
     # Display temperature and humidity on the LCD
@@ -119,15 +123,12 @@ while True:
     lcd.putstr("Humidity: {:.1f}%".format(humidity))
     
     # Publish to MQTT if there is a change in the readings
-    if message != prev_weather:
-        print("Updated!")
-        print("Reporting to MQTT topic {}: {}".format(MQTT_TOPIC, message))
-        client.publish(MQTT_TOPIC, message)
-        prev_weather = message
-    else:
-        print("No change")
+    print("Updated!")
+    print("Reporting to MQTT topic {}: {}".format(MQTT_TOPIC, message))
+    client.publish(MQTT_TOPIC, message)
+    prev_weather = message
         
-    time.sleep(2)
+    time.sleep(30) # Wait for 5 seconds before taking the next reading
 ```
 Khi chúng ta chạy file main.py trên ESP32 thì chúng ta sẽ thấy thông tin về nhiệt độ và độ ẩm được hiển thị trên LCD và cũng được publish lên topic **test** trên AWS IoT Core.
 

@@ -12,7 +12,7 @@ Vậy là chúng ta đã có dữ liệu từ thiết bị được gửi lên A
 Ở phần này chúng ta sẽ có các phần sau:
 
 - Tạo DynamoDB table.
-- Tạo Rule để lưu trữ dữ liệu vào DynamoDB.
 - Tạo lambda function để xử lý dữ liệu trước khi lưu vào DynamoDB.
+- Tạo Rule để lưu trữ dữ liệu vào DynamoDB.
 - Tạo IoT Core Rule.
 

@@ -12,21 +12,21 @@
     <title>MQTT test ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1728960590" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1728960590" rel="stylesheet">
-    <link href="/css/hybrid.css?1728960590" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1728960590" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1728960590" rel="stylesheet">
-    <link href="/css/auto-complete.css?1728960590" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1728960590" rel="stylesheet">
-    <link href="/css/theme.css?1728960590" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1728960590" rel="stylesheet">
+    <link href="/css/nucleus.css?1728975335" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1728975335" rel="stylesheet">
+    <link href="/css/hybrid.css?1728975335" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1728975335" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1728975335" rel="stylesheet">
+    <link href="/css/auto-complete.css?1728975335" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1728975335" rel="stylesheet">
+    <link href="/css/theme.css?1728975335" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1728975335" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1728960590" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1728975335" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1728960590"></script>
+    <script src="/js/jquery-3.3.1.min.js?1728975335"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1728960590"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1728960590"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1728975335"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1728975335"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1728960590"></script>
+<script type="text/javascript" src="/js/search.js?1728975335"></script>
 
     
   </div>
@@ -322,6 +322,130 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Tạo bảng trong DynamoDB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-store_data/3.1-create_dynamodb/">
+           <b> 3.1. </b> Tạo bảng trong DynamoDB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Tạo Lambda" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-store_data/3.2-create_lambda/">
+           <b> 3.2. </b> Tạo Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Tạo IoT rule và action" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-store_data/3.3-create-iot_action/">
+          <b> 3.3. </b>Tạo IoT rule và action
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-store_data/3.4-test/" title="Test Lambda" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-store_data/3.4-test/">
+          <b> 3.4. </b>Test Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -475,7 +599,7 @@
     <li>
       <ul>
         <li><a href="#1-đầu-tiên-chúng-ta-cần-lấy-thông-tin-về-endpoint-của-mqtt-broker">1. Đầu tiên chúng ta cần lấy thông tin về endpoint của MQTT broker.</a></li>
-        <li><a href="#2-ở-file-mainpy-chúng-ta-điền-thông-tin-như-sau">2. Ở file main.py chúng ta điền thông tin như sau</a></li>
+        <li><a href="#2-ở-file-mainpy-chúng-ta-điền-thông-tin-cert-như-sau">2. Ở file main.py chúng ta điền thông tin cert như sau:</a></li>
       </ul>
     </li>
   </ul>
@@ -511,7 +635,7 @@
 <p>Ta sẽ nhận được thông tin như sau:</p>
 <p><img alt="Overview" src="/images/28.png"></p>
 <p>Đây là thông tin endpoint của MQTT broker mà chúng ta sẽ sử dụng để kết nối với AWS IoT Core.</p>
-<h3 id="2-ở-file-mainpy-chúng-ta-điền-thông-tin-như-sau">2. Ở file main.py chúng ta điền thông tin như sau</h3>
+<h3 id="2-ở-file-mainpy-chúng-ta-điền-thông-tin-cert-như-sau">2. Ở file main.py chúng ta điền thông tin cert như sau:</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> network
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> machine <span style="color:#f92672">import</span> Pin, I2C
@@ -594,11 +718,15 @@
 </span></span><span style="display:flex;"><span>    sensor<span style="color:#f92672">.</span>measure() 
 </span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">=</span> sensor<span style="color:#f92672">.</span>temperature()
 </span></span><span style="display:flex;"><span>    humidity <span style="color:#f92672">=</span> sensor<span style="color:#f92672">.</span>humidity()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    timestamp <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Format the message for MQTT</span>
 </span></span><span style="display:flex;"><span>    message <span style="color:#f92672">=</span> ujson<span style="color:#f92672">.</span>dumps({
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;temp&#34;</span>: temp,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;humidity&#34;</span>: humidity,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;device_id&#34;</span>: device_id,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;timestamp&#34;</span>: timestamp
 </span></span><span style="display:flex;"><span>    })
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Display temperature and humidity on the LCD</span>
@@ -608,15 +736,12 @@
 </span></span><span style="display:flex;"><span>    lcd<span style="color:#f92672">.</span>putstr(<span style="color:#e6db74">&#34;Humidity: </span><span style="color:#e6db74">{:.1f}</span><span style="color:#e6db74">%&#34;</span><span style="color:#f92672">.</span>format(humidity))
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Publish to MQTT if there is a change in the readings</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> message <span style="color:#f92672">!=</span> prev_weather:
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Updated!&#34;</span>)
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Reporting to MQTT topic </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(MQTT_TOPIC, message))
-</span></span><span style="display:flex;"><span>        client<span style="color:#f92672">.</span>publish(MQTT_TOPIC, message)
-</span></span><span style="display:flex;"><span>        prev_weather <span style="color:#f92672">=</span> message
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;No change&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Updated!&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Reporting to MQTT topic </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(MQTT_TOPIC, message))
+</span></span><span style="display:flex;"><span>    client<span style="color:#f92672">.</span>publish(MQTT_TOPIC, message)
+</span></span><span style="display:flex;"><span>    prev_weather <span style="color:#f92672">=</span> message
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">30</span>) <span style="color:#75715e"># Wait for 5 seconds before taking the next reading</span>
 </span></span></code></pre></div><p>Khi chúng ta chạy file main.py trên ESP32 thì chúng ta sẽ thấy thông tin về nhiệt độ và độ ẩm được hiển thị trên LCD và cũng được publish lên topic <strong>test</strong> trên AWS IoT Core.</p>
 <p><img alt="Overview" src="/images/29.png"></p>
 <p>Chúng ta kiểm tra trên MQTT test client thì chúng ta sẽ thấy message được publish lên topic <strong>test</strong>.</p>
@@ -809,8 +934,74 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -837,19 +1028,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1728960590"></script>
-    <script src="/js/perfect-scrollbar.min.js?1728960590"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1728960590"></script>
-    <script src="/js/jquery.sticky.js?1728960590"></script>
-    <script src="/js/featherlight.min.js?1728960590"></script>
-    <script src="/js/highlight.pack.js?1728960590"></script>
+    <script src="/js/clipboard.min.js?1728975335"></script>
+    <script src="/js/perfect-scrollbar.min.js?1728975335"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1728975335"></script>
+    <script src="/js/jquery.sticky.js?1728975335"></script>
+    <script src="/js/featherlight.min.js?1728975335"></script>
+    <script src="/js/highlight.pack.js?1728975335"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1728960590"></script>
-    <script src="/js/learn.js?1728960590"></script>
-    <script src="/js/hugo-learn.js?1728960590"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1728975335"></script>
+    <script src="/js/learn.js?1728975335"></script>
+    <script src="/js/hugo-learn.js?1728975335"></script>
 
-    <link href="/mermaid/mermaid.css?1728960590" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1728960590"></script>
+    <link href="/mermaid/mermaid.css?1728975335" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1728975335"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

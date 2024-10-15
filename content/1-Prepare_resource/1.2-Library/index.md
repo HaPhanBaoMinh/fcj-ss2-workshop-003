@@ -270,13 +270,12 @@ import dht
 import ujson
 from umqtt.simple import MQTTClient
 from i2c_lcd import I2cLcd  # Import the custom I2C_LCD class
+import ussl as ssl
 
 # MQTT Server Parameters
-MQTT_CLIENT_ID = "micropython-weather-demo"
-MQTT_BROKER    = "broker.mqttdashboard.com"
-MQTT_USER      = ""
-MQTT_PASSWORD  = ""
-MQTT_TOPIC     = "wokwi-weather"
+MQTT_CLIENT_ID = "ESP32-001"
+MQTT_BROKER    = "a23sutvtpz6muq-ats.iot.ap-southeast-1.amazonaws.com"
+MQTT_TOPIC     = "test"
 
 # DHT22 sensor setup
 sensor = dht.DHT22(Pin(15))
@@ -285,6 +284,25 @@ sensor = dht.DHT22(Pin(15))
 i2c = I2C(0, sda=Pin(21), scl=Pin(22), freq=400000)  # SDA to pin 27, SCL to pin 26
 I2C_ADDR = 0x27  # Default I2C address for the LCD
 lcd = I2cLcd(i2c, I2C_ADDR, 2, 16)  # Assuming a 16x2 LCD
+
+# Private key and certificate (paste the contents here as strings)
+key_data = """
+-----BEGIN RSA PRIVATE KEY-----
+
+-----END RSA PRIVATE KEY-----
+"""
+
+cert_data = """
+-----BEGIN CERTIFICATE-----
+
+-----END CERTIFICATE-----
+"""
+
+ca_data = """
+-----BEGIN CERTIFICATE-----
+
+-----END CERTIFICATE-----
+"""
 
 # WiFi connection
 print("Connecting to WiFi", end="")
@@ -298,7 +316,20 @@ print(" Connected!")
 
 # MQTT setup
 print("Connecting to MQTT server... ", end="")
-client = MQTTClient(MQTT_CLIENT_ID, MQTT_BROKER, user=MQTT_USER, password=MQTT_PASSWORD)
+
+ssl_params = {
+    'key': key_data,
+    'cert': cert_data,
+    'cadata':ca_data
+}
+client = MQTTClient(
+    MQTT_CLIENT_ID, 
+    MQTT_BROKER, 
+    ssl=True,
+    ssl_params=ssl_params,
+    port=8883
+)
+
 client.connect()
 
 print("Connected!")
@@ -314,11 +345,15 @@ while True:
     sensor.measure() 
     temp = sensor.temperature()
     humidity = sensor.humidity()
+
+    timestamp = time.time()
     
     # Format the message for MQTT
     message = ujson.dumps({
         "temp": temp,
         "humidity": humidity,
+        "device_id": device_id,
+        "timestamp": timestamp
     })
     
     # Display temperature and humidity on the LCD
@@ -328,15 +363,12 @@ while True:
     lcd.putstr("Humidity: {:.1f}%".format(humidity))
     
     # Publish to MQTT if there is a change in the readings
-    if message != prev_weather:
-        print("Updated!")
-        print("Reporting to MQTT topic {}: {}".format(MQTT_TOPIC, message))
-        client.publish(MQTT_TOPIC, message)
-        prev_weather = message
-    else:
-        print("No change")
+    print("Updated!")
+    print("Reporting to MQTT topic {}: {}".format(MQTT_TOPIC, message))
+    client.publish(MQTT_TOPIC, message)
+    prev_weather = message
         
-    time.sleep(2)
+    time.sleep(30) # Wait for 5 seconds before taking the next reading
 ```
 
 Chúng ta sẽ được kết quả như sau:
