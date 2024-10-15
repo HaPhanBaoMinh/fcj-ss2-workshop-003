@@ -49,6 +49,13 @@
 	"content": "Tiếp theo chúng ta sẽ tạo policy cho các \u0026ldquo;\u0026ldquo;things\u0026rdquo;\u0026rdquo; mà chúng ta đã tạo ở bước trước có thể truy cập các AWS IoT Core resources.\n1. Chúng ta chọn Create a policy. 2. Điền thông tin về policy của bạn. Ở đây mình điền thông tin như sau:\nPolicy Name: Tên của policy. Plicy effect: Chúng ta chọn Allow - cho phép. Policy action: Chúng ta chọn iot:* - cho phép tất cả các action trong AWS IoT Core. Resource ARN: Chúng ta chọn All resources - cho phép tất cả các resources trong AWS IoT Core. Sau đó chúng ta chọn Create.\n3. Sau khi tạo chúng ta sẽ thấy policy của mình. 4. Tiếp theo chúng ta sẽ gắn policy này với certificate mà chúng ta đã tạo ở bước trước. Chúng ta vào Certificates và chọn Attach policy.\nChúng ta chọn policy mà chúng ta vừa tạo và chọn Attach polices.\n5. Sau khi gắn policy chúng ta sẽ thấy policy đã được gắn với certificate. Good job!\n"
 },
 {
+	"uri": "//localhost:1313/3-store_data/",
+	"title": "Lưu trữ dữ liệu",
+	"tags": [],
+	"description": "",
+	"content": "\nVậy là chúng ta đã có dữ liệu từ thiết bị được gửi lên AWS IoT Core, tiếp theo chúng ta sẽ tìm cách lưu trữ những dự liệu này vào DynamoDB.\nỞ phần này chúng ta sẽ có các phần sau:\nTạo DynamoDB table. Tạo Rule để lưu trữ dữ liệu vào DynamoDB. Tạo lambda function để xử lý dữ liệu trước khi lưu vào DynamoDB. Tạo IoT Core Rule. "
+},
+{
 	"uri": "//localhost:1313/2-aws_iot_core/2.3-test-client/",
 	"title": "MQTT test client",
 	"tags": [],

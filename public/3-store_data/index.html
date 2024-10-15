@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>AWS IoT Core :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>Lưu trữ dữ liệu :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1728960590" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1728960590" rel="stylesheet">
-    <link href="/css/hybrid.css?1728960590" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1728960590" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1728960590" rel="stylesheet">
-    <link href="/css/auto-complete.css?1728960590" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1728960590" rel="stylesheet">
-    <link href="/css/theme.css?1728960590" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1728960590" rel="stylesheet">
+    <link href="/css/nucleus.css?1728960740" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1728960740" rel="stylesheet">
+    <link href="/css/hybrid.css?1728960740" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1728960740" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1728960740" rel="stylesheet">
+    <link href="/css/auto-complete.css?1728960740" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1728960740" rel="stylesheet">
+    <link href="/css/theme.css?1728960740" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1728960740" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1728960590" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1728960740" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1728960590"></script>
+    <script src="/js/jquery-3.3.1.min.js?1728960740"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/2-aws_iot_core/">
+  <body class="" data-url="/3-store_data/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1728960590"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1728960590"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1728960740"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1728960740"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1728960590"></script>
+<script type="text/javascript" src="/js/search.js?1728960740"></script>
 
     
   </div>
@@ -162,7 +162,7 @@
     
     <li data-nav-id="/2-aws_iot_core/" title="AWS IoT Core" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/2-aws_iot_core/">
@@ -312,7 +312,7 @@
     
     <li data-nav-id="/3-store_data/" title="Lưu trữ dữ liệu" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/3-store_data/">
@@ -367,7 +367,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/2-aws_iot_core/" selected>English</option>
+                      <option id="en" value="//localhost:1313/3-store_data/" selected>English</option>
                     
                   
               
@@ -453,7 +453,7 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > AWS IoT Core
+            <a href='/'>Giới thiệu</a> > Lưu trữ dữ liệu
           
         
           
@@ -480,7 +480,7 @@
           
             <h1>
               
-              AWS IoT Core
+              Lưu trữ dữ liệu
             </h1>
           
 
@@ -488,23 +488,15 @@
 
 
 
-	<p><img alt="Overview" src="/images/10.png"></p>
-<p>AWS IoT Core là một service cung cấp các dịch vụ cho phép kết nối các thiết bị IoT với các service khác của AWS.</p>
-<p>IoT Core hỗ trợ nhiều giao thức kết nối khác nhau như:</p>
-<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html">1. MQTT (Message Queuing and Telemetry Transport)</a></p>
-<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html">2. MQTT over WSS (Websockets Secure)</a></p>
-<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/ws.html">3. WebSockets</a></p>
-<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/http.html">4. HTTPS (Hypertext Transfer Protocol - Secure)</a></p>
-<p><a href="https://docs.aws.amazon.com/iot-wireless/latest/developerguide/what-is-iot-lorawan.html">5. LoRaWAN (Long Range Wide Area Network)</a></p>
-<p>Cách kết nối thiết bị với IoT Core:</p>
-<ol>
-<li>AWS IoT Device SDK</li>
-<li>AWS IoT Core for LoRaWAN</li>
-<li>AWS Command Line Interface (CLI)</li>
-<li>AWS IoT API</li>
-<li>AWS SDKs</li>
-</ol>
-<p>Ngoài ra bạn cũng có thể gửi trực tiếp message vào message broker trên AWS Console.</p>
+	<p><img alt="Overview" src="/images/31.png"></p>
+<p>Vậy là chúng ta đã có dữ liệu từ thiết bị được gửi lên AWS IoT Core, tiếp theo chúng ta sẽ tìm cách lưu trữ những dự liệu này vào DynamoDB.</p>
+<p>Ở phần này chúng ta sẽ có các phần sau:</p>
+<ul>
+<li>Tạo DynamoDB table.</li>
+<li>Tạo Rule để lưu trữ dữ liệu vào DynamoDB.</li>
+<li>Tạo lambda function để xử lý dữ liệu trước khi lưu vào DynamoDB.</li>
+<li>Tạo IoT Core Rule.</li>
+</ul>
 
 
 
@@ -596,7 +588,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -611,9 +602,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -681,6 +669,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -702,10 +691,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-aws_iot_core/2.4-test-esp32/" title="MQTT test ESP32"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-prepare_resource/" title="Chuẩn bị tài nguyên" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -715,19 +704,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1728960590"></script>
-    <script src="/js/perfect-scrollbar.min.js?1728960590"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1728960590"></script>
-    <script src="/js/jquery.sticky.js?1728960590"></script>
-    <script src="/js/featherlight.min.js?1728960590"></script>
-    <script src="/js/highlight.pack.js?1728960590"></script>
+    <script src="/js/clipboard.min.js?1728960740"></script>
+    <script src="/js/perfect-scrollbar.min.js?1728960740"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1728960740"></script>
+    <script src="/js/jquery.sticky.js?1728960740"></script>
+    <script src="/js/featherlight.min.js?1728960740"></script>
+    <script src="/js/highlight.pack.js?1728960740"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1728960590"></script>
-    <script src="/js/learn.js?1728960590"></script>
-    <script src="/js/hugo-learn.js?1728960590"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1728960740"></script>
+    <script src="/js/learn.js?1728960740"></script>
+    <script src="/js/hugo-learn.js?1728960740"></script>
 
-    <link href="/mermaid/mermaid.css?1728960590" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1728960590"></script>
+    <link href="/mermaid/mermaid.css?1728960740" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1728960740"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

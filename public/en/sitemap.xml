@@ -24,6 +24,14 @@
   </url><url>
     <loc>//localhost:1313/1-prepare_resource/1.2-library/</loc>
   </url><url>
+    <loc>//localhost:1313/2-aws_iot_core/2.2-create_policies/</loc>
+  </url><url>
+    <loc>//localhost:1313/3-store_data/</loc>
+  </url><url>
+    <loc>//localhost:1313/2-aws_iot_core/2.3-test-client/</loc>
+  </url><url>
+    <loc>//localhost:1313/2-aws_iot_core/2.4-test-esp32/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
