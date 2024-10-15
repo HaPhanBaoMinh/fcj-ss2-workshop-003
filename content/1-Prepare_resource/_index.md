@@ -1,5 +1,5 @@
 ---
-title: "Chuẩn bị tài nguyên"
+title: "Chuẩn bị"
 weight: 1
 chapter: false
 pre: "<b> 1. </b>"

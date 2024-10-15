@@ -42,4 +42,3 @@ Chúng ta chọn policy mà chúng ta vừa tạo và chọn **Attach polices**.
 
 ![Overview](/images/22.png)
 
-Good job!
