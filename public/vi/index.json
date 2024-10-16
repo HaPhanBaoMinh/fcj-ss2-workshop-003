@@ -21,6 +21,13 @@
 	"content": "Dự Đoán Nhiệt Độ \u0026amp; Độ Ẩm Từ Dữ Liệu ESP32 qua IoT Core 1. Overview Trong bài viết này, chúng ta sẽ tìm hiểu cách sử dụng ESP32 để đo nhiệt độ và độ ẩm từ cảm biến nhiệt độ, độ ẩm, sau đó gửi dữ liệu lên AWS IOT CORE và lưu trữ vào DynamoDB. Sau đó chúng ta sẽ dùng Lambda để chuẩn hóa dữ liệu. Cuối cùng, chúng ta sẽ sử dụng AWS SageMaker Canvas để tiến hành dự đoán nhiệt độ và độ ẩm trong tương lai.\nBài Lab này có thể ứng dụng trong nhiều lĩnh vực như: nông nghiệp, y tế, công nghiệp, \u0026hellip;\n2. Objectives Hiểu cách sử dụng ESP32 để đo nhiệt độ và độ ẩm từ cảm biến nhiệt độ, độ ẩm Hiểu cách gửi dữ liệu lên AWS IOT CORE và lưu trữ vào DynamoDB Hiểu cách sử dụng Lambda để chuẩn hóa dữ liệu Hiểu cách sử dụng AWS SageMaker Canvas để tiến hành dự đoán nhiệt độ và độ ẩm trong tương lai "
 },
 {
+	"uri": "//localhost:1313/vi/2-aws_iot_core/",
+	"title": "AWS IoT Core",
+	"tags": [],
+	"description": "",
+	"content": "\nAWS IoT Core là một service cung cấp các dịch vụ cho phép kết nối các thiết bị IoT với các service khác của AWS.\nIoT Core hỗ trợ nhiều giao thức kết nối khác nhau như:\n1. MQTT (Message Queuing and Telemetry Transport)\n2. MQTT over WSS (Websockets Secure)\n3. WebSockets\n4. HTTPS (Hypertext Transfer Protocol - Secure)\n5. LoRaWAN (Long Range Wide Area Network)\nCách kết nối thiết bị với IoT Core:\nAWS IoT Device SDK AWS IoT Core for LoRaWAN AWS Command Line Interface (CLI) AWS IoT API AWS SDKs Ngoài ra bạn cũng có thể gửi trực tiếp message vào message broker trên AWS Console.\n"
+},
+{
 	"uri": "//localhost:1313/vi/1-prepare_resource/1.2-library/",
 	"title": "Các thư viện cần thiết",
 	"tags": [],
