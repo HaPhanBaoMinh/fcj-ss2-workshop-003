@@ -36,9 +36,13 @@
   </url><url>
     <loc>//localhost:1313/3-store_data/3.3-create-iot_action/</loc>
   </url><url>
+    <loc>//localhost:1313/4-example_data/</loc>
+  </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.4-test-esp32/</loc>
   </url><url>
     <loc>//localhost:1313/3-store_data/3.4-test/</loc>
+  </url><url>
+    <loc>//localhost:1313/5-sagemaker_canvas/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link

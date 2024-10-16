@@ -42,3 +42,12 @@ Và kết quả chúng ta tạo được một table có dữ liệu mẫu.
 Như các bạn thấy, chúng ta đã có dữ liệu mẫu trong DynamoDB.
 
 ![Overview](/images/55.png)
+
+### 3. Export data từ DynamoDB
+
+Chúng ta cũng có thể export data từ DynamoDB ra file CSV để tiến hành import Dataset vào SageMaker.
+
+Trong mục **Explore items** sau khi **Scan** chúng ta chọn **Action** và chọn **Download results to CSV**.
+
+![Overview](/images/65.png)
+
