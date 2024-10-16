@@ -21,11 +21,3 @@ Bài Lab này có thể ứng dụng trong nhiều lĩnh vực như: nông nghi�
 - Hiểu cách sử dụng Lambda để chuẩn hóa dữ liệu
 - Hiểu cách sử dụng AWS SageMaker Canvas để tiến hành dự đoán nhiệt độ và độ ẩm trong tương lai
 
-## 3. Content
-- [1. Chuẩn bị các tài nguyên cần thiết](/chapter1)
-- [2. Cài đặt ESP32](/chapter2)
-- [3. Gửi dữ liệu lên AWS IOT CORE](/chapter3)
-- [4. Lưu trữ dữ liệu vào DynamoDB](/chapter4)
-- [5. Chuẩn hóa dữ liệu bằng Lambda](/chapter5)
-- [6. Dự đoán nhiệt độ và độ ẩm bằng SageMaker Canvas](/chapter6)
-- [7. Kết luận và xóa các service](/chapter7)

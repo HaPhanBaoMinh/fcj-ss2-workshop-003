@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.136.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Cài đặt và Triển khai Dịch vụ Đầu tiên của Bạn với Kubernetes :: Cài đặt và Triển khai Dịch vụ Đầu tiên của Bạn với Kubernetes</title>
+    <title>Giới thiệu :: Cài đặt và Triển khai Dịch vụ Đầu tiên của Bạn với Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1729039772" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729039772" rel="stylesheet">
-    <link href="/css/hybrid.css?1729039772" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729039772" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729039772" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729039772" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729039772" rel="stylesheet">
-    <link href="/css/theme.css?1729039772" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729039772" rel="stylesheet">
+    <link href="/css/nucleus.css?1729072377" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729072377" rel="stylesheet">
+    <link href="/css/hybrid.css?1729072377" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729072377" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729072377" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729072377" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729072377" rel="stylesheet">
+    <link href="/css/theme.css?1729072377" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729072377" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1729039772" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1729072377" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729039772"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729072377"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729039772"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729039772"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729072377"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729072377"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729039772"></script>
+<script type="text/javascript" src="/js/search.js?1729072377"></script>
 
     
   </div>
@@ -73,6 +73,100 @@
     <ul class="topics">
 
         
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-prepare_resource/" title="Chuẩn bị" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/1-prepare_resource/">
+          <b> 1. </b>Chuẩn bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/1-prepare_resource/1.1-esp34/">
+           <b> 1.1. </b> Cài đặt ESP32
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/1-prepare_resource/1.2-library/">
+           <b> 1.2. </b> Các thư viện cần thiết
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
           
          
     </ul>
@@ -201,17 +295,19 @@
 <a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
 </span>
 
-           
-	
-		<h1>Customize your own home page</h1>
-		<p>
-		  The site is working. Don't forget to customize this homepage with your own. You typically have 3 choices :
-		</p>
-		<ul>
-			<li><b>1. </b> Create an _index.md document in <b>content</b> folder and fill it with Markdown content</li>
-			<li><b>2. </b> Create an <b>index.html</b> file in the <b>static</b> folder and fill the file with HTML content</li>
-		  <li><b>3. </b> Configure your server to automatically redirect home page to one your documentation page</li>
-		</ul>
+ 
+<h1 id="dự-đoán-nhiệt-độ--độ-ẩm-từ-dữ-liệu-esp32-qua-iot-core">Dự Đoán Nhiệt Độ &amp; Độ Ẩm Từ Dữ Liệu ESP32 qua IoT Core</h1>
+<p><img alt="Overview" src="/images/00.png"></p>
+<h2 id="1-overview">1. Overview</h2>
+<p>Trong bài viết này, chúng ta sẽ tìm hiểu cách sử dụng ESP32 để đo nhiệt độ và độ ẩm từ cảm biến nhiệt độ, độ ẩm, sau đó gửi dữ liệu lên AWS IOT CORE và lưu trữ vào DynamoDB. Sau đó chúng ta sẽ dùng Lambda để chuẩn hóa dữ liệu. Cuối cùng, chúng ta sẽ sử dụng AWS SageMaker Canvas để tiến hành dự đoán nhiệt độ và độ ẩm trong tương lai.</p>
+<p>Bài Lab này có thể ứng dụng trong nhiều lĩnh vực như: nông nghiệp, y tế, công nghiệp, &hellip;</p>
+<h2 id="2-objectives">2. Objectives</h2>
+<ul>
+<li>Hiểu cách sử dụng ESP32 để đo nhiệt độ và độ ẩm từ cảm biến nhiệt độ, độ ẩm</li>
+<li>Hiểu cách gửi dữ liệu lên AWS IOT CORE và lưu trữ vào DynamoDB</li>
+<li>Hiểu cách sử dụng Lambda để chuẩn hóa dữ liệu</li>
+<li>Hiểu cách sử dụng AWS SageMaker Canvas để tiến hành dự đoán nhiệt độ và độ ẩm trong tương lai</li>
+</ul>
 	
   
         
@@ -240,6 +336,59 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -250,6 +399,8 @@
 	 
 		
 		
+			<a class="nav nav-next" href="/vi/1-prepare_resource/" title="Chuẩn bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
 	
     </div>
 
@@ -258,19 +409,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729039772"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729039772"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729039772"></script>
-    <script src="/js/jquery.sticky.js?1729039772"></script>
-    <script src="/js/featherlight.min.js?1729039772"></script>
-    <script src="/js/highlight.pack.js?1729039772"></script>
+    <script src="/js/clipboard.min.js?1729072377"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729072377"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729072377"></script>
+    <script src="/js/jquery.sticky.js?1729072377"></script>
+    <script src="/js/featherlight.min.js?1729072377"></script>
+    <script src="/js/highlight.pack.js?1729072377"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729039772"></script>
-    <script src="/js/learn.js?1729039772"></script>
-    <script src="/js/hugo-learn.js?1729039772"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729072377"></script>
+    <script src="/js/learn.js?1729072377"></script>
+    <script src="/js/hugo-learn.js?1729072377"></script>
 
-    <link href="/mermaid/mermaid.css?1729039772" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1729039772"></script>
+    <link href="/mermaid/mermaid.css?1729072377" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1729072377"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.136.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Đăng kí thiết bị :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>Device Registration :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1729039772" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729039772" rel="stylesheet">
-    <link href="/css/hybrid.css?1729039772" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729039772" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729039772" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729039772" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729039772" rel="stylesheet">
-    <link href="/css/theme.css?1729039772" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729039772" rel="stylesheet">
+    <link href="/css/nucleus.css?1729072012" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729072012" rel="stylesheet">
+    <link href="/css/hybrid.css?1729072012" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729072012" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729072012" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729072012" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729072012" rel="stylesheet">
+    <link href="/css/theme.css?1729072012" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729072012" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1729039772" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1729072012" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729039772"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729072012"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729039772"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729039772"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729072012"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729072012"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729039772"></script>
+<script type="text/javascript" src="/js/search.js?1729072012"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-prepare_resource/" title="Chuẩn bị" class="dd-item 
+    <li data-nav-id="/1-prepare_resource/" title="Preparation" class="dd-item 
         
         
         
         ">
       <a href="/1-prepare_resource/">
-          <b> 1. </b>Chuẩn bị
+          <b> 1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -98,6 +98,8 @@
         <ul>
           
           
+            
+          
           
           
         
@@ -111,13 +113,20 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item ">
-        <a href="/1-prepare_resource/1.1-esp34/">
-         <b> 1.1. </b> Cài đặt ESP32
-        <i class="fas fa-check read-icon"></i>
-        </a>
+    <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Setting Up ESP32" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-prepare_resource/1.1-esp34/">
+           <b> 1.1. </b> Setting Up ESP32
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
     </li>
-     
   
  
 
@@ -132,9 +141,9 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" class="dd-item ">
+      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Required Libraries" class="dd-item ">
         <a href="/1-prepare_resource/1.2-library/">
-         <b> 1.2. </b> Các thư viện cần thiết
+         <b> 1.2. </b> Required Libraries
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -191,13 +200,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Device Registration" class="dd-item 
         
         active
         
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
-           <b> 2.1. </b> Đăng kí thiết bị
+           <b> 2.1. </b> Device Registration
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +228,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Create Policy" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.2-create_policies/">
-           <b> 2.2. </b> Tạo policy
+           <b> 2.2. </b> Create Policy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -247,13 +256,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT test client" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT Test Client" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.3-test-client/">
-           <b> 2.3. </b> MQTT test client
+           <b> 2.3. </b> MQTT Test Client
           
             <i class="fas fa-check read-icon"></i>
           
@@ -275,13 +284,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT test ESP32" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT Test ESP32" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.4-test-esp32/">
-           <b> 2.4. </b> MQTT test ESP32
+           <b> 2.4. </b> MQTT Test ESP32
           
             <i class="fas fa-check read-icon"></i>
           
@@ -310,13 +319,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/" title="Lưu trữ dữ liệu" class="dd-item 
+    <li data-nav-id="/3-store_data/" title="Data Storage" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/">
-          <b> 3. </b>Lưu trữ dữ liệu
+          <b> 3. </b>Data Storage
           
             <i class="fas fa-check read-icon"></i>
           
@@ -341,13 +350,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Tạo bảng trong DynamoDB" class="dd-item 
+    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Create a Table in DynamoDB" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.1-create_dynamodb/">
-           <b> 3.1. </b> Tạo bảng trong DynamoDB
+           <b> 3.1. </b> Create a Table in DynamoDB
           
             <i class="fas fa-check read-icon"></i>
           
@@ -369,13 +378,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Tạo Lambda" class="dd-item 
+    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Create Lambda" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.2-create_lambda/">
-           <b> 3.2. </b> Tạo Lambda
+           <b> 3.2. </b> Create Lambda
           
             <i class="fas fa-check read-icon"></i>
           
@@ -397,13 +406,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Tạo IoT rule và action" class="dd-item 
+    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Create IoT Rule and Action" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.3-create-iot_action/">
-          <b> 3.3. </b>Tạo IoT rule và action
+          <b> 3.3. </b>Create IoT Rule and Action
           
             <i class="fas fa-check read-icon"></i>
           
@@ -460,13 +469,13 @@
  
   
     
-    <li data-nav-id="/4-example_data/" title="Chuẩn bị data mẫu" class="dd-item 
+    <li data-nav-id="/4-example_data/" title="Preparing Sample Data" class="dd-item 
         
         
         
         ">
       <a href="/4-example_data/">
-           <b> 4. </b> Chuẩn bị data mẫu
+           <b> 4. </b> Preparing Sample Data
           
             <i class="fas fa-check read-icon"></i>
           
@@ -486,13 +495,189 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/" title="Sagemaker canvas" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/" title="SageMaker Canvas" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/">
-           <b> 5. </b> Sagemaker canvas
+           <b> 5. </b> SageMaker Canvas
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.1-create_dataset/" title="Prepare Dataset" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.1-create_dataset/">
+           <b> 5.1. </b> Prepare Dataset
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.2-create_model/" title="Create Model" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.2-create_model/">
+           <b> 5.2. </b> Create Model
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/" title="Preparing Dataset for Prediction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/">
+           <b> 5.3. </b> Preparing Dataset for Prediction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.4-predict_data/" title="Making Predictions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.4-predict_data/">
+           <b> 5.4. </b> Making Predictions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-documents/" title="Conclusion and References" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/6-documents/">
+           <b> 6. </b> Conclusion and References
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-clear-resource/" title="Clear Resources (Important)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-clear-resource/">
+           <b> 7. </b> Clear Resources (Important)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -633,7 +818,7 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > Đăng kí thiết bị
+            <a href='/'>Introduction</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > Device Registration
           
         
           
@@ -650,11 +835,11 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-chúng-ta-tuy-cập-vào-aws-iot-corehttpsconsoleawsamazoncomiothomeregionus-east-1dashboard-và-chọn-create-thing">1. Chúng ta tuy cập vào <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard">AWS IoT Core</a> và chọn <strong>Create thing</strong>.</a></li>
-        <li><a href="#2-điền-thông-tin-về-thiết-bị-của-bạn-ở-đây-mình-điền-thông-tin-như-sau">2. Điền thông tin về thiết bị của bạn. Ở đây mình điền thông tin như sau:</a></li>
-        <li><a href="#3-tạo-certificates">3. Tạo Certificates.</a></li>
+        <li><a href="#1-access-aws-iot-corehttpsconsoleawsamazoncomiothomeregionus-east-1dashboard-and-select-create-thing">1. Access <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard">AWS IoT Core</a> and select <strong>Create thing</strong>.</a></li>
+        <li><a href="#2-fill-in-the-details-of-your-device-in-this-example-i-entered-the-following-information">2. Fill in the details of your device. In this example, I entered the following information:</a></li>
+        <li><a href="#3-create-certificates">3. Create Certificates.</a></li>
         <li><a href="#4-attach-a-policy">4. Attach a policy.</a></li>
-        <li><a href="#5-sau-khi-tạo-chúng-ta-hãy-tải-các-file-certificates-về-máy">5. Sau khi tạo chúng ta hãy tải các file Certificates về máy.</a></li>
+        <li><a href="#5-after-creation-download-the-certificate-files-to-your-computer">5. After creation, download the certificate files to your computer.</a></li>
       </ul>
     </li>
   </ul>
@@ -674,7 +859,7 @@
           
             <h1>
               
-              Đăng kí thiết bị
+              Device Registration
             </h1>
           
 
@@ -682,29 +867,29 @@
 
 
 
-	<p>Bước đầu tiên để sử dụng AWS IoT Core là chúng ta cần đăng kí một thiết bị. Trong trường hợp của chúng ta thì đó là ESP32.</p>
-<h3 id="1-chúng-ta-tuy-cập-vào-aws-iot-corehttpsconsoleawsamazoncomiothomeregionus-east-1dashboard-và-chọn-create-thing">1. Chúng ta tuy cập vào <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard">AWS IoT Core</a> và chọn <strong>Create thing</strong>.</h3>
+	<p>The first step to using AWS IoT Core is registering a device. In our case, it&rsquo;s the ESP32.</p>
+<h3 id="1-access-aws-iot-corehttpsconsoleawsamazoncomiothomeregionus-east-1dashboard-and-select-create-thing">1. Access <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard">AWS IoT Core</a> and select <strong>Create thing</strong>.</h3>
 <p><img alt="Overview" src="/images/11.png"></p>
-<h3 id="2-điền-thông-tin-về-thiết-bị-của-bạn-ở-đây-mình-điền-thông-tin-như-sau">2. Điền thông tin về thiết bị của bạn. Ở đây mình điền thông tin như sau:</h3>
-<p>Ở đây ngoài tên thì còn có nhiều thông tin khác như:</p>
+<h3 id="2-fill-in-the-details-of-your-device-in-this-example-i-entered-the-following-information">2. Fill in the details of your device. In this example, I entered the following information:</h3>
+<p>Besides the device name, you will see additional fields such as:</p>
 <ul>
-<li>Thing type: Loại thiết bị.</li>
-<li>Thing group: Nhóm thiết bị.</li>
-<li>Billing group: Nhóm thanh toán.</li>
-<li>Packages and versions: Phiên bản và gói.</li>
+<li>Thing type: Type of device.</li>
+<li>Thing group: Device group.</li>
+<li>Billing group: Billing group.</li>
+<li>Packages and versions: Version and package.</li>
 </ul>
-<p>Những thông tin này sẽ giúp bạn quản lý thiết bị của mình một cách dễ dàng hơn trong trường hợp bạn có nhiều thiết bị.</p>
-<p>Ở đây mình điền tên thiết bị + mã số thiết bị.</p>
-<p>Sau đó các bạn chọn <strong>Next</strong>.</p>
+<p>These details help you manage your devices more efficiently, especially if you have many devices.</p>
+<p>Here, I enter the device name + device ID.</p>
+<p>Afterward, select <strong>Next</strong>.</p>
 <p><img alt="Overview" src="/images/12.png"></p>
-<h3 id="3-tạo-certificates">3. Tạo Certificates.</h3>
-<p>Để đảm bảo thông tin gửi đi và nhận về an toàn, chúng ta cần tạo Certificates cho thiết bị.</p>
-<p>Ở đây mình chọn <strong>Auto-generate a new certificate</strong> và chọn <strong>Next</strong>.</p>
+<h3 id="3-create-certificates">3. Create Certificates.</h3>
+<p>To ensure the data sent and received is secure, we need to generate certificates for the device.</p>
+<p>Here, I choose <strong>Auto-generate a new certificate</strong> and then select <strong>Next</strong>.</p>
 <p><img alt="Overview" src="/images/13.png"></p>
 <h3 id="4-attach-a-policy">4. Attach a policy.</h3>
-<p>Chúng ta sẽ tạo policy sau, ở bước này chúng ta chọn <strong>Create thing</strong></p>
+<p>We will create the policy later, so in this step, select <strong>Create thing</strong>.</p>
 <p><img alt="Overview" src="/images/14.png"></p>
-<h3 id="5-sau-khi-tạo-chúng-ta-hãy-tải-các-file-certificates-về-máy">5. Sau khi tạo chúng ta hãy tải các file Certificates về máy.</h3>
+<h3 id="5-after-creation-download-the-certificate-files-to-your-computer">5. After creation, download the certificate files to your computer.</h3>
 <p><img alt="Overview" src="/images/15.png"></p>
 <p><img alt="Overview" src="/images/16.png"></p>
 
@@ -755,6 +940,8 @@
 
                     
                     
+                        
+                    
                     
 
                     
@@ -876,6 +1063,104 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1006,7 +1291,7 @@
 			<a class="nav nav-prev" href="/2-aws_iot_core/" title="AWS IoT Core"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-aws_iot_core/2.2-create_policies/" title="Create Policy" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1016,19 +1301,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729039772"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729039772"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729039772"></script>
-    <script src="/js/jquery.sticky.js?1729039772"></script>
-    <script src="/js/featherlight.min.js?1729039772"></script>
-    <script src="/js/highlight.pack.js?1729039772"></script>
+    <script src="/js/clipboard.min.js?1729072012"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729072012"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729072012"></script>
+    <script src="/js/jquery.sticky.js?1729072012"></script>
+    <script src="/js/featherlight.min.js?1729072012"></script>
+    <script src="/js/highlight.pack.js?1729072012"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729039772"></script>
-    <script src="/js/learn.js?1729039772"></script>
-    <script src="/js/hugo-learn.js?1729039772"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729072012"></script>
+    <script src="/js/learn.js?1729072012"></script>
+    <script src="/js/hugo-learn.js?1729072012"></script>
 
-    <link href="/mermaid/mermaid.css?1729039772" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1729039772"></script>
+    <link href="/mermaid/mermaid.css?1729072012" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1729072012"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

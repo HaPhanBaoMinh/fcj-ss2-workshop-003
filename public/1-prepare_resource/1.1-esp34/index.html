@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.136.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Cài đặt ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>Setting Up ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1729039772" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729039772" rel="stylesheet">
-    <link href="/css/hybrid.css?1729039772" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729039772" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729039772" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729039772" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729039772" rel="stylesheet">
-    <link href="/css/theme.css?1729039772" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729039772" rel="stylesheet">
+    <link href="/css/nucleus.css?1729072376" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729072376" rel="stylesheet">
+    <link href="/css/hybrid.css?1729072376" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729072376" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729072376" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729072376" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729072376" rel="stylesheet">
+    <link href="/css/theme.css?1729072376" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729072376" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1729039772" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1729072376" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729039772"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729072376"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729039772"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729039772"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729072376"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729072376"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729039772"></script>
+<script type="text/javascript" src="/js/search.js?1729072376"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-prepare_resource/" title="Chuẩn bị" class="dd-item 
+    <li data-nav-id="/1-prepare_resource/" title="Preparation" class="dd-item 
         parent
         
         
         ">
       <a href="/1-prepare_resource/">
-          <b> 1. </b>Chuẩn bị
+          <b> 1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -98,6 +98,8 @@
         <ul>
           
           
+            
+          
           
           
         
@@ -111,13 +113,20 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item active">
-        <a href="/1-prepare_resource/1.1-esp34/">
-         <b> 1.1. </b> Cài đặt ESP32
-        <i class="fas fa-check read-icon"></i>
-        </a>
+    <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Setting Up ESP32" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/1-prepare_resource/1.1-esp34/">
+           <b> 1.1. </b> Setting Up ESP32
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
     </li>
-     
   
  
 
@@ -132,13 +141,20 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" class="dd-item ">
-        <a href="/1-prepare_resource/1.2-library/">
-         <b> 1.2. </b> Các thư viện cần thiết
-        <i class="fas fa-check read-icon"></i>
-        </a>
+    <li data-nav-id="/1-prepare_resource/1.2-library/" title="Required Libraries" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-prepare_resource/1.2-library/">
+           <b> 1.2. </b> Required Libraries
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
     </li>
-     
   
  
 
@@ -191,13 +207,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Device Registration" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
-           <b> 2.1. </b> Đăng kí thiết bị
+           <b> 2.1. </b> Device Registration
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +235,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Create Policy" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.2-create_policies/">
-           <b> 2.2. </b> Tạo policy
+           <b> 2.2. </b> Create Policy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -247,13 +263,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT test client" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT Test Client" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.3-test-client/">
-           <b> 2.3. </b> MQTT test client
+           <b> 2.3. </b> MQTT Test Client
           
             <i class="fas fa-check read-icon"></i>
           
@@ -275,13 +291,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT test ESP32" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT Test ESP32" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.4-test-esp32/">
-           <b> 2.4. </b> MQTT test ESP32
+           <b> 2.4. </b> MQTT Test ESP32
           
             <i class="fas fa-check read-icon"></i>
           
@@ -310,13 +326,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/" title="Lưu trữ dữ liệu" class="dd-item 
+    <li data-nav-id="/3-store_data/" title="Data Storage" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/">
-          <b> 3. </b>Lưu trữ dữ liệu
+          <b> 3. </b>Data Storage
           
             <i class="fas fa-check read-icon"></i>
           
@@ -341,13 +357,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Tạo bảng trong DynamoDB" class="dd-item 
+    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Create a Table in DynamoDB" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.1-create_dynamodb/">
-           <b> 3.1. </b> Tạo bảng trong DynamoDB
+           <b> 3.1. </b> Create a Table in DynamoDB
           
             <i class="fas fa-check read-icon"></i>
           
@@ -369,13 +385,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Tạo Lambda" class="dd-item 
+    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Create Lambda" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.2-create_lambda/">
-           <b> 3.2. </b> Tạo Lambda
+           <b> 3.2. </b> Create Lambda
           
             <i class="fas fa-check read-icon"></i>
           
@@ -397,13 +413,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Tạo IoT rule và action" class="dd-item 
+    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Create IoT Rule and Action" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.3-create-iot_action/">
-          <b> 3.3. </b>Tạo IoT rule và action
+          <b> 3.3. </b>Create IoT Rule and Action
           
             <i class="fas fa-check read-icon"></i>
           
@@ -460,13 +476,13 @@
  
   
     
-    <li data-nav-id="/4-example_data/" title="Chuẩn bị data mẫu" class="dd-item 
+    <li data-nav-id="/4-example_data/" title="Preparing Sample Data" class="dd-item 
         
         
         
         ">
       <a href="/4-example_data/">
-           <b> 4. </b> Chuẩn bị data mẫu
+           <b> 4. </b> Preparing Sample Data
           
             <i class="fas fa-check read-icon"></i>
           
@@ -486,13 +502,189 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/" title="Sagemaker canvas" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/" title="SageMaker Canvas" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/">
-           <b> 5. </b> Sagemaker canvas
+           <b> 5. </b> SageMaker Canvas
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.1-create_dataset/" title="Prepare Dataset" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.1-create_dataset/">
+           <b> 5.1. </b> Prepare Dataset
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.2-create_model/" title="Create Model" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.2-create_model/">
+           <b> 5.2. </b> Create Model
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/" title="Preparing Dataset for Prediction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/">
+           <b> 5.3. </b> Preparing Dataset for Prediction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-sagemaker_canvas/5.4-predict_data/" title="Making Predictions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-sagemaker_canvas/5.4-predict_data/">
+           <b> 5.4. </b> Making Predictions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-documents/" title="Conclusion and References" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/6-documents/">
+           <b> 6. </b> Conclusion and References
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-clear-resource/" title="Clear Resources (Important)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-clear-resource/">
+           <b> 7. </b> Clear Resources (Important)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -547,6 +739,18 @@
                     
                   
               
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="//localhost:1313/vi/1-prepare_resource/1.1-esp34/">Tiếng Việt</option>
+                    
                   
               
           
@@ -633,7 +837,7 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > <a href='/1-prepare_resource/'>Chuẩn bị</a> > Cài đặt ESP32
+            <a href='/'>Introduction</a> > <a href='/1-prepare_resource/'>Preparation</a> > Setting Up ESP32
           
         
           
@@ -649,7 +853,7 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#wokwi">WOKWI</a></li>
-    <li><a href="#setup-thiết-bị">Setup thiết bị</a></li>
+    <li><a href="#device-setup">Device Setup</a></li>
   </ul>
 </nav>
     </div>
@@ -667,34 +871,35 @@
           
             <h1>
               
-              Cài đặt ESP32
+              Setting Up ESP32
             </h1>
           
 
         
 
 
-<p><img alt="Overview" src="/images/02.png"></p>
+
+	<p><img alt="Overview" src="/images/02.png"></p>
 <h2 id="wokwi">WOKWI</h2>
-<p>Trong bài lab này, chúng ta sẽ sử dụng Wokwi để mô phỏng việc thu thập dữ liệu từ cảm biến nhiệt độ và độ ẩm DHT11 và gửi dữ liệu lên AWS IoT Core thông qua giao thức MQTT.</p>
-<h2 id="setup-thiết-bị">Setup thiết bị</h2>
-<p>Sau khi đã ta đã có tài khoản trên Wokwi, chúng ta tiến hành tạo một project mới.</p>
+<p>In this lab, we will use Wokwi to simulate collecting data from the DHT11 temperature and humidity sensor and sending the data to AWS IoT Core via the MQTT protocol.</p>
+<h2 id="device-setup">Device Setup</h2>
+<p>Once we have an account on Wokwi, we proceed to create a new project.</p>
 <ol>
-<li>Truy cập vào trang chủ của Wokwi: <a href="https://wokwi.com/">https://wokwi.com/</a></li>
-<li>Đăng nhập vào tài khoản của bạn.</li>
-<li>Tạo một project mới bằng cách chọn <code>New Project</code>.</li>
+<li>Go to the Wokwi homepage: <a href="https://wokwi.com/">https://wokwi.com/</a></li>
+<li>Log into your account.</li>
+<li>Create a new project by selecting <code>New Project</code>.</li>
 </ol>
 <p><img alt="Overview" src="/images/03.png"></p>
 <ol start="4">
-<li>Chọn <code>ESP32</code> từ danh sách các linh kiện.</li>
+<li>Select <code>ESP32</code> from the list of components.</li>
 </ol>
 <p><img alt="Overview" src="/images/04.png"></p>
 <ol start="5">
-<li>Chọn <code>MicroPython</code>.</li>
+<li>Select <code>MicroPython</code>.</li>
 </ol>
 <p><img alt="Overview" src="/images/05.png"></p>
 <ol start="6">
-<li>Chọn <code>diagram.json</code> và paste nội dung sau vào:</li>
+<li>Select <code>diagram.json</code> and paste the following content:</li>
 </ol>
 <p><img alt="Overview" src="/images/06.png"></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
@@ -739,12 +944,15 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: {}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ol>
-<li>Kết quả:</li>
+<li>Result:
+<img alt="Overview" src="/images/07.png"></li>
 </ol>
-<p><img alt="Overview" src="/images/07.png"></p>
 
 
-<footer class="footline">
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -785,6 +993,8 @@
 
                     
                     
+                        
+                    
                     
 
                     
@@ -905,6 +1115,104 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1032,10 +1340,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/1-prepare_resource/" title="Chuẩn bị"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/1-prepare_resource/" title="Preparation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-prepare_resource/1.2-library/" title="Required Libraries" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1045,19 +1353,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729039772"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729039772"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729039772"></script>
-    <script src="/js/jquery.sticky.js?1729039772"></script>
-    <script src="/js/featherlight.min.js?1729039772"></script>
-    <script src="/js/highlight.pack.js?1729039772"></script>
+    <script src="/js/clipboard.min.js?1729072377"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729072377"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729072377"></script>
+    <script src="/js/jquery.sticky.js?1729072377"></script>
+    <script src="/js/featherlight.min.js?1729072377"></script>
+    <script src="/js/highlight.pack.js?1729072377"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729039772"></script>
-    <script src="/js/learn.js?1729039772"></script>
-    <script src="/js/hugo-learn.js?1729039772"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729072377"></script>
+    <script src="/js/learn.js?1729072377"></script>
+    <script src="/js/hugo-learn.js?1729072377"></script>
 
-    <link href="/mermaid/mermaid.css?1729039772" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1729039772"></script>
+    <link href="/mermaid/mermaid.css?1729072377" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1729072377"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
@@ -1073,4 +1381,3 @@
 </script>
   </body>
 </html>
-

@@ -2,9 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/1-prepare_resource/1.1-esp34/</loc>
-  </url><url>
-    <loc>//localhost:1313/1-prepare_resource/</loc>
+    <loc>//localhost:1313/3-store_data/3.1-create_dynamodb/</loc>
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.1-register_new_thing/</loc>
   </url><url>
@@ -20,29 +18,43 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-store_data/3.1-create_dynamodb/</loc>
+    <loc>//localhost:1313/1-prepare_resource/</loc>
+  </url><url>
+    <loc>//localhost:1313/5-sagemaker_canvas/5.1-create_dataset/</loc>
+  </url><url>
+    <loc>//localhost:1313/1-prepare_resource/1.1-esp34/</loc>
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/</loc>
   </url><url>
-    <loc>//localhost:1313/1-prepare_resource/1.2-library/</loc>
-  </url><url>
     <loc>//localhost:1313/3-store_data/3.2-create_lambda/</loc>
   </url><url>
+    <loc>//localhost:1313/5-sagemaker_canvas/5.2-create_model/</loc>
+  </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.2-create_policies/</loc>
+  </url><url>
+    <loc>//localhost:1313/1-prepare_resource/1.2-library/</loc>
+  </url><url>
+    <loc>//localhost:1313/3-store_data/3.3-create-iot_action/</loc>
   </url><url>
     <loc>//localhost:1313/3-store_data/</loc>
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.3-test-client/</loc>
   </url><url>
-    <loc>//localhost:1313/3-store_data/3.3-create-iot_action/</loc>
+    <loc>//localhost:1313/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/</loc>
   </url><url>
-    <loc>//localhost:1313/4-example_data/</loc>
+    <loc>//localhost:1313/5-sagemaker_canvas/5.4-predict_data/</loc>
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.4-test-esp32/</loc>
+  </url><url>
+    <loc>//localhost:1313/4-example_data/</loc>
   </url><url>
     <loc>//localhost:1313/3-store_data/3.4-test/</loc>
   </url><url>
     <loc>//localhost:1313/5-sagemaker_canvas/</loc>
+  </url><url>
+    <loc>//localhost:1313/6-documents/</loc>
+  </url><url>
+    <loc>//localhost:1313/7-clear-resource/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link

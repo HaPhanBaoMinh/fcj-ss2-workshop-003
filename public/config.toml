@@ -18,8 +18,8 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.vi]
-title = "Xây dựng quy trình CI/CD với CodePipeline"
-weight = 2
+title = "Dự Đoán Nhiệt Độ & Độ Ẩm Từ Dữ Liệu ESP32 qua IoT Core"
+weight = 1
 languageName = "Tiếng Việt"
 
 [[Languages.vi.menu.shortcuts]]
@@ -36,7 +36,7 @@ weight = 20
 
 [Languages.en]
 title = "Start with Amazon VPC and AWS VPN Site-to-Site."
-weight = 1
+weight = 2
 languageName = "English"
 
 [[Languages.en.menu.shortcuts]]

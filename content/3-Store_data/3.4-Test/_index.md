@@ -16,3 +16,4 @@ Có vẻ mọi thứ đã ổn bây giờ chúng ta hãy thử bật ESP32 lên 
 ![Overview](/images/47.png)
 
 Như các bạn thấy, dữ liệu đã được lưu vào DynamoDB.
+

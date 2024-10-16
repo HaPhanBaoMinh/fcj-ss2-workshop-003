@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.136.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Chuẩn bị dataset cho việc dự đoán :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>Preparing Dataset for Prediction :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1729049924" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729049924" rel="stylesheet">
-    <link href="/css/hybrid.css?1729049924" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729049924" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729049924" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729049924" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729049924" rel="stylesheet">
-    <link href="/css/theme.css?1729049924" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729049924" rel="stylesheet">
+    <link href="/css/nucleus.css?1729072012" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729072012" rel="stylesheet">
+    <link href="/css/hybrid.css?1729072012" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729072012" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729072012" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729072012" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729072012" rel="stylesheet">
+    <link href="/css/theme.css?1729072012" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729072012" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1729049924" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1729072012" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729049924"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729072012"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729049924"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729049924"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729072012"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729072012"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729049924"></script>
+<script type="text/javascript" src="/js/search.js?1729072012"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-prepare_resource/" title="Chuẩn bị" class="dd-item 
+    <li data-nav-id="/1-prepare_resource/" title="Preparation" class="dd-item 
         
         
         
         ">
       <a href="/1-prepare_resource/">
-          <b> 1. </b>Chuẩn bị
+          <b> 1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -98,6 +98,8 @@
         <ul>
           
           
+            
+          
           
           
         
@@ -111,13 +113,20 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item ">
-        <a href="/1-prepare_resource/1.1-esp34/">
-         <b> 1.1. </b> Cài đặt ESP32
-        <i class="fas fa-check read-icon"></i>
-        </a>
+    <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Setting Up ESP32" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-prepare_resource/1.1-esp34/">
+           <b> 1.1. </b> Setting Up ESP32
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
     </li>
-     
   
  
 
@@ -132,9 +141,9 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" class="dd-item ">
+      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Required Libraries" class="dd-item ">
         <a href="/1-prepare_resource/1.2-library/">
-         <b> 1.2. </b> Các thư viện cần thiết
+         <b> 1.2. </b> Required Libraries
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -191,13 +200,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Device Registration" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
-           <b> 2.1. </b> Đăng kí thiết bị
+           <b> 2.1. </b> Device Registration
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +228,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Create Policy" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.2-create_policies/">
-           <b> 2.2. </b> Tạo policy
+           <b> 2.2. </b> Create Policy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -247,13 +256,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT test client" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT Test Client" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.3-test-client/">
-           <b> 2.3. </b> MQTT test client
+           <b> 2.3. </b> MQTT Test Client
           
             <i class="fas fa-check read-icon"></i>
           
@@ -275,13 +284,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT test ESP32" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT Test ESP32" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.4-test-esp32/">
-           <b> 2.4. </b> MQTT test ESP32
+           <b> 2.4. </b> MQTT Test ESP32
           
             <i class="fas fa-check read-icon"></i>
           
@@ -310,13 +319,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/" title="Lưu trữ dữ liệu" class="dd-item 
+    <li data-nav-id="/3-store_data/" title="Data Storage" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/">
-          <b> 3. </b>Lưu trữ dữ liệu
+          <b> 3. </b>Data Storage
           
             <i class="fas fa-check read-icon"></i>
           
@@ -341,13 +350,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Tạo bảng trong DynamoDB" class="dd-item 
+    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Create a Table in DynamoDB" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.1-create_dynamodb/">
-           <b> 3.1. </b> Tạo bảng trong DynamoDB
+           <b> 3.1. </b> Create a Table in DynamoDB
           
             <i class="fas fa-check read-icon"></i>
           
@@ -369,13 +378,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Tạo Lambda" class="dd-item 
+    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Create Lambda" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.2-create_lambda/">
-           <b> 3.2. </b> Tạo Lambda
+           <b> 3.2. </b> Create Lambda
           
             <i class="fas fa-check read-icon"></i>
           
@@ -397,13 +406,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Tạo IoT rule và action" class="dd-item 
+    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Create IoT Rule and Action" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.3-create-iot_action/">
-          <b> 3.3. </b>Tạo IoT rule và action
+          <b> 3.3. </b>Create IoT Rule and Action
           
             <i class="fas fa-check read-icon"></i>
           
@@ -460,13 +469,13 @@
  
   
     
-    <li data-nav-id="/4-example_data/" title="Chuẩn bị data mẫu" class="dd-item 
+    <li data-nav-id="/4-example_data/" title="Preparing Sample Data" class="dd-item 
         
         
         
         ">
       <a href="/4-example_data/">
-           <b> 4. </b> Chuẩn bị data mẫu
+           <b> 4. </b> Preparing Sample Data
           
             <i class="fas fa-check read-icon"></i>
           
@@ -486,13 +495,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/" title="Sagemaker canvas" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/" title="SageMaker Canvas" class="dd-item 
         parent
         
         
         ">
       <a href="/5-sagemaker_canvas/">
-           <b> 5. </b> Sagemaker canvas
+           <b> 5. </b> SageMaker Canvas
           
             <i class="fas fa-check read-icon"></i>
           
@@ -517,13 +526,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.1-create_dataset/" title="Chuẩn bị dataset" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.1-create_dataset/" title="Prepare Dataset" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.1-create_dataset/">
-           <b> 5.1. </b> Chuẩn bị dataset
+           <b> 5.1. </b> Prepare Dataset
           
             <i class="fas fa-check read-icon"></i>
           
@@ -545,13 +554,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.2-create_model/" title="Tạo model" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.2-create_model/" title="Create Model" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.2-create_model/">
-           <b> 5.2. </b> Tạo model
+           <b> 5.2. </b> Create Model
           
             <i class="fas fa-check read-icon"></i>
           
@@ -573,13 +582,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/" title="Chuẩn bị dataset cho việc dự đoán" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/" title="Preparing Dataset for Prediction" class="dd-item 
         
         active
         
         ">
       <a href="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/">
-           <b> 5.3. </b> Chuẩn bị dataset cho việc dự đoán
+           <b> 5.3. </b> Preparing Dataset for Prediction
           
             <i class="fas fa-check read-icon"></i>
           
@@ -601,13 +610,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.4-predict_data/" title="Tiến hành dự đoán" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.4-predict_data/" title="Making Predictions" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.4-predict_data/">
-           <b> 5.4. </b> Tiến hành dự đoán
+           <b> 5.4. </b> Making Predictions
           
             <i class="fas fa-check read-icon"></i>
           
@@ -636,13 +645,39 @@
  
   
     
-    <li data-nav-id="/6-clear/" title="Sagemaker canvas" class="dd-item 
+    <li data-nav-id="/6-documents/" title="Conclusion and References" class="dd-item 
         
         
         
         ">
-      <a href="/6-clear/">
-           <b> 5. </b> Sagemaker canvas
+      <a href="/6-documents/">
+           <b> 6. </b> Conclusion and References
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-clear-resource/" title="Clear Resources (Important)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-clear-resource/">
+           <b> 7. </b> Clear Resources (Important)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -783,7 +818,7 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > <a href='/5-sagemaker_canvas/'>Sagemaker canvas</a> > Chuẩn bị dataset cho việc dự đoán
+            <a href='/'>Introduction</a> > <a href='/5-sagemaker_canvas/'>SageMaker Canvas</a> > Preparing Dataset for Prediction
           
         
           
@@ -800,7 +835,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-chuẩn-bị-dataset">1. Chuẩn bị dataset</a></li>
+        <li><a href="#1-prepare-the-dataset">1. Prepare the Dataset</a></li>
       </ul>
     </li>
   </ul>
@@ -820,7 +855,7 @@
           
             <h1>
               
-              Chuẩn bị dataset cho việc dự đoán
+              Preparing Dataset for Prediction
             </h1>
           
 
@@ -828,14 +863,14 @@
 
 
 
-	<p>Bây giờ chúng ta đã có model mà không cần phải viết 1 dòng code nào. So cool!!!</p>
-<p>Tiếp theo chúng ta sẽ chuẩn bị dataset cho việc dự đoán dữ liệu từ model mà chúng ta đã tạo ở bước trước, ở file này chúng ta sẽ không có cột <strong>Temperature</strong> mà chúng ta sẽ dùng model để dự đoán giá trị của cột này.</p>
-<h3 id="1-chuẩn-bị-dataset">1. Chuẩn bị dataset</h3>
-<p>Đây là file dataset mà chúng ta sẽ sử dụng để dự đoán giá trị của cột <strong>Temperature</strong>.</p>
+	<p>Now we have a model without having to write a single line of code. So cool!!!</p>
+<p>Next, we will prepare a dataset for predicting data from the model we created in the previous step. In this file, we will not have the <strong>Temperature</strong> column, as we will use the model to predict the value of this column.</p>
+<h3 id="1-prepare-the-dataset">1. Prepare the Dataset</h3>
+<p>This is the dataset file that we will use to predict the value of the <strong>Temperature</strong> column.</p>
 <p><img alt="Overview" src="/images/76.png"></p>
-<p>Tương tự như bước 5.1 chúng ta sẽ tạo dataset từ file CSV mà chúng ta đã chuẩn bị.</p>
+<p>Similar to step 5.1, we will create a dataset from the CSV file we prepared.</p>
 <p><img alt="Overview" src="/images/77.png"></p>
-<p>Ở đây mình đã tạo 1 dataset mới từ file CSV với tên <strong>Predict_data</strong></p>
+<p>Here, I have created a new dataset from the CSV file named <strong>Predict_data</strong>.</p>
 
 
 
@@ -884,90 +919,10 @@
 
                     
                     
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                         
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1096,6 +1051,88 @@
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -1188,6 +1225,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1217,10 +1270,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/5-sagemaker_canvas/5.2-create_model/" title="Tạo model"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/5-sagemaker_canvas/5.2-create_model/" title="Create Model"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/5-sagemaker_canvas/5.4-predict_data/" title="Tiến hành dự đoán" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/5-sagemaker_canvas/5.4-predict_data/" title="Making Predictions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1230,19 +1283,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729049924"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729049924"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729049924"></script>
-    <script src="/js/jquery.sticky.js?1729049924"></script>
-    <script src="/js/featherlight.min.js?1729049924"></script>
-    <script src="/js/highlight.pack.js?1729049924"></script>
+    <script src="/js/clipboard.min.js?1729072012"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729072012"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729072012"></script>
+    <script src="/js/jquery.sticky.js?1729072012"></script>
+    <script src="/js/featherlight.min.js?1729072012"></script>
+    <script src="/js/highlight.pack.js?1729072012"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729049924"></script>
-    <script src="/js/learn.js?1729049924"></script>
-    <script src="/js/hugo-learn.js?1729049924"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729072012"></script>
+    <script src="/js/learn.js?1729072012"></script>
+    <script src="/js/hugo-learn.js?1729072012"></script>
 
-    <link href="/mermaid/mermaid.css?1729049924" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1729049924"></script>
+    <link href="/mermaid/mermaid.css?1729072012" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1729072012"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

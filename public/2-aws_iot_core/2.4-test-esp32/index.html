@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.136.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>MQTT test ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
+    <title>MQTT Test ESP32 :: Installing and Deploying Your First Service with Kubernetes</title>
 
     
-    <link href="/css/nucleus.css?1729050529" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729050529" rel="stylesheet">
-    <link href="/css/hybrid.css?1729050529" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729050529" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729050529" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729050529" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729050529" rel="stylesheet">
-    <link href="/css/theme.css?1729050529" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729050529" rel="stylesheet">
+    <link href="/css/nucleus.css?1729072012" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729072012" rel="stylesheet">
+    <link href="/css/hybrid.css?1729072012" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729072012" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729072012" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729072012" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729072012" rel="stylesheet">
+    <link href="/css/theme.css?1729072012" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729072012" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1729050529" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1729072012" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729050529"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729072012"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729050529"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729050529"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729072012"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729072012"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729050529"></script>
+<script type="text/javascript" src="/js/search.js?1729072012"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-prepare_resource/" title="Chuẩn bị" class="dd-item 
+    <li data-nav-id="/1-prepare_resource/" title="Preparation" class="dd-item 
         
         
         
         ">
       <a href="/1-prepare_resource/">
-          <b> 1. </b>Chuẩn bị
+          <b> 1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -98,6 +98,8 @@
         <ul>
           
           
+            
+          
           
           
         
@@ -111,13 +113,20 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Cài đặt ESP32" class="dd-item ">
-        <a href="/1-prepare_resource/1.1-esp34/">
-         <b> 1.1. </b> Cài đặt ESP32
-        <i class="fas fa-check read-icon"></i>
-        </a>
+    <li data-nav-id="/1-prepare_resource/1.1-esp34/" title="Setting Up ESP32" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-prepare_resource/1.1-esp34/">
+           <b> 1.1. </b> Setting Up ESP32
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
     </li>
-     
   
  
 
@@ -132,9 +141,9 @@
  
   
     
-      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Các thư viện cần thiết" class="dd-item ">
+      <li data-nav-id="/1-prepare_resource/1.2-library/" title="Required Libraries" class="dd-item ">
         <a href="/1-prepare_resource/1.2-library/">
-         <b> 1.2. </b> Các thư viện cần thiết
+         <b> 1.2. </b> Required Libraries
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -191,13 +200,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Đăng kí thiết bị" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.1-register_new_thing/" title="Device Registration" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.1-register_new_thing/">
-           <b> 2.1. </b> Đăng kí thiết bị
+           <b> 2.1. </b> Device Registration
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +228,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Tạo policy" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.2-create_policies/" title="Create Policy" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.2-create_policies/">
-           <b> 2.2. </b> Tạo policy
+           <b> 2.2. </b> Create Policy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -247,13 +256,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT test client" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.3-test-client/" title="MQTT Test Client" class="dd-item 
         
         
         
         ">
       <a href="/2-aws_iot_core/2.3-test-client/">
-           <b> 2.3. </b> MQTT test client
+           <b> 2.3. </b> MQTT Test Client
           
             <i class="fas fa-check read-icon"></i>
           
@@ -275,13 +284,13 @@
  
   
     
-    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT test ESP32" class="dd-item 
+    <li data-nav-id="/2-aws_iot_core/2.4-test-esp32/" title="MQTT Test ESP32" class="dd-item 
         
         active
         
         ">
       <a href="/2-aws_iot_core/2.4-test-esp32/">
-           <b> 2.4. </b> MQTT test ESP32
+           <b> 2.4. </b> MQTT Test ESP32
           
             <i class="fas fa-check read-icon"></i>
           
@@ -310,13 +319,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/" title="Lưu trữ dữ liệu" class="dd-item 
+    <li data-nav-id="/3-store_data/" title="Data Storage" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/">
-          <b> 3. </b>Lưu trữ dữ liệu
+          <b> 3. </b>Data Storage
           
             <i class="fas fa-check read-icon"></i>
           
@@ -341,13 +350,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Tạo bảng trong DynamoDB" class="dd-item 
+    <li data-nav-id="/3-store_data/3.1-create_dynamodb/" title="Create a Table in DynamoDB" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.1-create_dynamodb/">
-           <b> 3.1. </b> Tạo bảng trong DynamoDB
+           <b> 3.1. </b> Create a Table in DynamoDB
           
             <i class="fas fa-check read-icon"></i>
           
@@ -369,13 +378,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Tạo Lambda" class="dd-item 
+    <li data-nav-id="/3-store_data/3.2-create_lambda/" title="Create Lambda" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.2-create_lambda/">
-           <b> 3.2. </b> Tạo Lambda
+           <b> 3.2. </b> Create Lambda
           
             <i class="fas fa-check read-icon"></i>
           
@@ -397,13 +406,13 @@
  
   
     
-    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Tạo IoT rule và action" class="dd-item 
+    <li data-nav-id="/3-store_data/3.3-create-iot_action/" title="Create IoT Rule and Action" class="dd-item 
         
         
         
         ">
       <a href="/3-store_data/3.3-create-iot_action/">
-          <b> 3.3. </b>Tạo IoT rule và action
+          <b> 3.3. </b>Create IoT Rule and Action
           
             <i class="fas fa-check read-icon"></i>
           
@@ -460,13 +469,13 @@
  
   
     
-    <li data-nav-id="/4-example_data/" title="Chuẩn bị data mẫu" class="dd-item 
+    <li data-nav-id="/4-example_data/" title="Preparing Sample Data" class="dd-item 
         
         
         
         ">
       <a href="/4-example_data/">
-           <b> 4. </b> Chuẩn bị data mẫu
+           <b> 4. </b> Preparing Sample Data
           
             <i class="fas fa-check read-icon"></i>
           
@@ -486,13 +495,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/" title="Sagemaker canvas" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/" title="SageMaker Canvas" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/">
-           <b> 5. </b> Sagemaker canvas
+           <b> 5. </b> SageMaker Canvas
           
             <i class="fas fa-check read-icon"></i>
           
@@ -517,13 +526,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.1-create_dataset/" title="Chuẩn bị dataset" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.1-create_dataset/" title="Prepare Dataset" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.1-create_dataset/">
-           <b> 5.1. </b> Chuẩn bị dataset
+           <b> 5.1. </b> Prepare Dataset
           
             <i class="fas fa-check read-icon"></i>
           
@@ -545,13 +554,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.2-create_model/" title="Tạo model" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.2-create_model/" title="Create Model" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.2-create_model/">
-           <b> 5.2. </b> Tạo model
+           <b> 5.2. </b> Create Model
           
             <i class="fas fa-check read-icon"></i>
           
@@ -573,13 +582,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/" title="Chuẩn bị dataset cho việc dự đoán" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/" title="Preparing Dataset for Prediction" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/">
-           <b> 5.3. </b> Chuẩn bị dataset cho việc dự đoán
+           <b> 5.3. </b> Preparing Dataset for Prediction
           
             <i class="fas fa-check read-icon"></i>
           
@@ -601,13 +610,13 @@
  
   
     
-    <li data-nav-id="/5-sagemaker_canvas/5.4-predict_data/" title="Tiến hành dự đoán" class="dd-item 
+    <li data-nav-id="/5-sagemaker_canvas/5.4-predict_data/" title="Making Predictions" class="dd-item 
         
         
         
         ">
       <a href="/5-sagemaker_canvas/5.4-predict_data/">
-           <b> 5.4. </b> Tiến hành dự đoán
+           <b> 5.4. </b> Making Predictions
           
             <i class="fas fa-check read-icon"></i>
           
@@ -636,13 +645,13 @@
  
   
     
-    <li data-nav-id="/6-clear/" title="Kết luận và tài liệu tham khảo" class="dd-item 
+    <li data-nav-id="/6-documents/" title="Conclusion and References" class="dd-item 
         
         
         
         ">
-      <a href="/6-clear/">
-           <b> 6. </b> Kết luận và tài liệu tham khảo
+      <a href="/6-documents/">
+           <b> 6. </b> Conclusion and References
           
             <i class="fas fa-check read-icon"></i>
           
@@ -662,13 +671,13 @@
  
   
     
-    <li data-nav-id="/7-clear-resource/" title="Kết luận và tài liệu tham khảo" class="dd-item 
+    <li data-nav-id="/7-clear-resource/" title="Clear Resources (Important)" class="dd-item 
         
         
         
         ">
       <a href="/7-clear-resource/">
-           <b> 6. </b> Kết luận và tài liệu tham khảo
+           <b> 7. </b> Clear Resources (Important)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -809,7 +818,7 @@
             
           
           
-            <a href='/'>Giới thiệu</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > MQTT test ESP32
+            <a href='/'>Introduction</a> > <a href='/2-aws_iot_core/'>AWS IoT Core</a> > MQTT Test ESP32
           
         
           
@@ -826,8 +835,8 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-đầu-tiên-chúng-ta-cần-lấy-thông-tin-về-endpoint-của-mqtt-broker">1. Đầu tiên chúng ta cần lấy thông tin về endpoint của MQTT broker.</a></li>
-        <li><a href="#2-ở-file-mainpy-chúng-ta-điền-thông-tin-cert-như-sau">2. Ở file main.py chúng ta điền thông tin cert như sau:</a></li>
+        <li><a href="#1-first-we-need-to-obtain-the-endpoint-information-of-the-mqtt-broker">1. First, we need to obtain the endpoint information of the MQTT broker.</a></li>
+        <li><a href="#2-in-the-mainpy-file-we-will-fill-in-the-cert-information-as-follows">2. In the <code>main.py</code> file, we will fill in the cert information as follows:</a></li>
       </ul>
     </li>
   </ul>
@@ -847,7 +856,7 @@
           
             <h1>
               
-              MQTT test ESP32
+              MQTT Test ESP32
             </h1>
           
 
@@ -855,15 +864,15 @@
 
 
 
-	<p>Chúng ta sẽ sử dụng ESP32 để test kết nối giữa thiết bị và AWS IoT Core.</p>
-<h3 id="1-đầu-tiên-chúng-ta-cần-lấy-thông-tin-về-endpoint-của-mqtt-broker">1. Đầu tiên chúng ta cần lấy thông tin về endpoint của MQTT broker.</h3>
-<p>Chúng ta vào aws shell và chạy lệnh sau:</p>
+	<p>We will use the ESP32 to test the connection between the device and AWS IoT Core.</p>
+<h3 id="1-first-we-need-to-obtain-the-endpoint-information-of-the-mqtt-broker">1. First, we need to obtain the endpoint information of the MQTT broker.</h3>
+<p>We go to the AWS shell and run the following command:</p>
 <pre><code>aws iot describe-endpoint
 </code></pre>
-<p>Ta sẽ nhận được thông tin như sau:</p>
+<p>We will receive information as follows:</p>
 <p><img alt="Overview" src="/images/28.png"></p>
-<p>Đây là thông tin endpoint của MQTT broker mà chúng ta sẽ sử dụng để kết nối với AWS IoT Core.</p>
-<h3 id="2-ở-file-mainpy-chúng-ta-điền-thông-tin-cert-như-sau">2. Ở file main.py chúng ta điền thông tin cert như sau:</h3>
+<p>This is the endpoint information of the MQTT broker that we will use to connect to AWS IoT Core.</p>
+<h3 id="2-in-the-mainpy-file-we-will-fill-in-the-cert-information-as-follows">2. In the <code>main.py</code> file, we will fill in the cert information as follows:</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> network
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> machine <span style="color:#f92672">import</span> Pin, I2C
@@ -969,13 +978,13 @@
 </span></span><span style="display:flex;"><span>    client<span style="color:#f92672">.</span>publish(MQTT_TOPIC, message)
 </span></span><span style="display:flex;"><span>    prev_weather <span style="color:#f92672">=</span> message
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">30</span>) <span style="color:#75715e"># Wait for 5 seconds before taking the next reading</span>
-</span></span></code></pre></div><p>Khi chúng ta chạy file main.py trên ESP32 thì chúng ta sẽ thấy thông tin về nhiệt độ và độ ẩm được hiển thị trên LCD và cũng được publish lên topic <strong>test</strong> trên AWS IoT Core.</p>
+</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">30</span>) <span style="color:#75715e"># Wait for 30 seconds before taking the next reading</span>
+</span></span></code></pre></div><p>When we run the main.py file on the ESP32, we will see the temperature and humidity information displayed on the LCD and also published to the test topic on AWS IoT Core.</p>
 <p><img alt="Overview" src="/images/29.png"></p>
-<p>Chúng ta kiểm tra trên MQTT test client thì chúng ta sẽ thấy message được publish lên topic <strong>test</strong>.</p>
-<p><img alt="Overview" src="/images/30.png"></p>
+<p>We check on the MQTT test client, and we will see the message published to the <strong>test</strong> topic.
+<img alt="Overview" src="/images/30.png"></p>
 <p>Good job!</p>
-<p>Bây giờ bạn có thể đổi thông tin topic và publish message khác lên topic đó.</p>
+<p>Now you can change the topic information and publish different messages to that topic.</p>
 
 
 
@@ -1024,6 +1033,8 @@
 
                     
                     
+                        
+                    
                     
 
                     
@@ -1373,10 +1384,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-aws_iot_core/2.3-test-client/" title="MQTT test client"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-aws_iot_core/2.3-test-client/" title="MQTT Test Client"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-store_data/" title="Lưu trữ dữ liệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-store_data/" title="Data Storage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1386,19 +1397,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729050529"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729050529"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729050529"></script>
-    <script src="/js/jquery.sticky.js?1729050529"></script>
-    <script src="/js/featherlight.min.js?1729050529"></script>
-    <script src="/js/highlight.pack.js?1729050529"></script>
+    <script src="/js/clipboard.min.js?1729072012"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729072012"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729072012"></script>
+    <script src="/js/jquery.sticky.js?1729072012"></script>
+    <script src="/js/featherlight.min.js?1729072012"></script>
+    <script src="/js/highlight.pack.js?1729072012"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729050529"></script>
-    <script src="/js/learn.js?1729050529"></script>
-    <script src="/js/hugo-learn.js?1729050529"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729072012"></script>
+    <script src="/js/learn.js?1729072012"></script>
+    <script src="/js/hugo-learn.js?1729072012"></script>
 
-    <link href="/mermaid/mermaid.css?1729050529" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1729050529"></script>
+    <link href="/mermaid/mermaid.css?1729072012" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1729072012"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
