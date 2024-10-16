@@ -13,10 +13,10 @@ Next, we will prepare a dataset for predicting data from the model we created in
 
 This is the dataset file that we will use to predict the value of the **Temperature** column.
 
-![Overview](/images/76.png)
+![Overview](/fcj-ss2-workshop-003/images/76.png)
 
 Similar to step 5.1, we will create a dataset from the CSV file we prepared.
 
-![Overview](/images/77.png)
+![Overview](/fcj-ss2-workshop-003/images/77.png)
 
 Here, I have created a new dataset from the CSV file named **Predict_data**.

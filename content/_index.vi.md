@@ -7,7 +7,7 @@ pre: " <b> 1. </b> "
 
 # Dự Đoán Nhiệt Độ & Độ Ẩm Từ Dữ Liệu ESP32 qua IoT Core
 
-![Overview](/images/00.png)
+![Overview](/fcj-ss2-workshop-003/images/00.png)
 
 ## 1. Overview
 

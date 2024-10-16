@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-![Overview](/images/08.png)
+![Overview](/fcj-ss2-workshop-003/images/08.png)
 
 ## Code files for communicating with the screen.
     
@@ -372,4 +372,4 @@ while True:
 ```
 
 
-![Overview](/images/09.png)
+![Overview](/fcj-ss2-workshop-003/images/09.png)

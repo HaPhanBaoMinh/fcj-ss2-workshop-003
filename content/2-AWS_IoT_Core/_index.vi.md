@@ -5,7 +5,7 @@ chapter: false
 pre: "<b> 2. </b>"
 ---
 
-![Overview](/images/10.png)
+![Overview](/fcj-ss2-workshop-003/images/10.png)
 
 AWS IoT Core là một service cung cấp các dịch vụ cho phép kết nối các thiết bị IoT với các service khác của AWS.
 

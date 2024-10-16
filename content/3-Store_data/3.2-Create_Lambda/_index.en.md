@@ -12,7 +12,7 @@ We will create a lambda function to process the data before storing it in Dynamo
 - Access **Lambda** on the AWS console.
 - Select **Create function** to create a new lambda function.
   
-![Overview](/images/35.png)
+![Overview](/fcj-ss2-workshop-003/images/35.png)
 
 ### 2. Fill in the Required Information
 
@@ -20,7 +20,7 @@ We will create a lambda function to process the data before storing it in Dynamo
 - **Runtime**: Choose the runtime for the lambda function; here I select **Python 3.11**.
 - Then select **Create function** to create the lambda function.
 
-![Overview](/images/36.png)
+![Overview](/fcj-ss2-workshop-003/images/36.png)
 
 ### 3. Update the Role of the Lambda Function
 
@@ -28,16 +28,16 @@ For the lambda function to access DynamoDB, we need to update the role of the la
 
 - We can click here to navigate to the IAM role page of the lambda function.
 
-![Overview](/images/37.png)
+![Overview](/fcj-ss2-workshop-003/images/37.png)
 
 ### 4. Add Policy
 
 - Here we will add a new policy for the lambda function.
 - To make it easier, we will select the policy **AmazonDynamoDBFullAccess**.
 
-![Overview](/images/38.png)
+![Overview](/fcj-ss2-workshop-003/images/38.png)
 
-![Overview](/images/39.png)
+![Overview](/fcj-ss2-workshop-003/images/39.png)
 
 ### 5. Update Code for the Lambda Function
 

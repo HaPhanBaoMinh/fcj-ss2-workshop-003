@@ -5,7 +5,7 @@ chapter: false
 pre: "<b> 1. </b>"
 ---
 
-![Overview](/images/01.png)
+![Overview](/fcj-ss2-workshop-003/images/01.png)
 
 ## Sơ đồ tổng quan
 

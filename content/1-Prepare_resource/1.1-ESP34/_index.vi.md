@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-![Overview](/images/02.png)
+![Overview](/fcj-ss2-workshop-003/images/02.png)
 
 ## WOKWI 
 
@@ -19,19 +19,19 @@ Sau khi đã ta đã có tài khoản trên Wokwi, chúng ta tiến hành tạo 
 2. Đăng nhập vào tài khoản của bạn.
 3. Tạo một project mới bằng cách chọn `New Project`.
 
-![Overview](/images/03.png)
+![Overview](/fcj-ss2-workshop-003/images/03.png)
 
 4. Chọn `ESP32` từ danh sách các linh kiện.
 
-![Overview](/images/04.png)
+![Overview](/fcj-ss2-workshop-003/images/04.png)
 
 5. Chọn `MicroPython`.
 
-![Overview](/images/05.png)
+![Overview](/fcj-ss2-workshop-003/images/05.png)
 
 6. Chọn `diagram.json` và paste nội dung sau vào:
 
-![Overview](/images/06.png)
+![Overview](/fcj-ss2-workshop-003/images/06.png)
 
 ```json
 {
@@ -79,4 +79,4 @@ Sau khi đã ta đã có tài khoản trên Wokwi, chúng ta tiến hành tạo 
 
 1. Kết quả:
 
-![Overview](/images/07.png)
+![Overview](/fcj-ss2-workshop-003/images/07.png)

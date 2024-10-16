@@ -11,7 +11,7 @@ Sau khi các thiết bị IoT của chúng ta gửi data lên cho IoT core chún
 
 Tiến hành chọn **Create table** để tạo bảng mới.
 
-![Overview](/images/32.png)
+![Overview](/fcj-ss2-workshop-003/images/32.png)
 
 ### 2. Điền các thông tin cần thiết
 
@@ -21,8 +21,8 @@ Tiến hành chọn **Create table** để tạo bảng mới.
 
 Sau đó tiến hành chọn **Create** để tạo bảng.
 
-![Overview](/images/33.png)
+![Overview](/fcj-ss2-workshop-003/images/33.png)
 
 Chúng ta được bảng như sau:
 
-![Overview](/images/34.png) 
+![Overview](/fcj-ss2-workshop-003/images/34.png) 

@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-![Overview](/images/02.png)
+![Overview](/fcj-ss2-workshop-003/images/02.png)
 
 ## WOKWI
 
@@ -19,19 +19,19 @@ Once we have an account on Wokwi, we proceed to create a new project.
 2. Log into your account.
 3. Create a new project by selecting `New Project`.
 
-![Overview](/images/03.png)
+![Overview](/fcj-ss2-workshop-003/images/03.png)
 
 4. Select `ESP32` from the list of components.
 
-![Overview](/images/04.png)
+![Overview](/fcj-ss2-workshop-003/images/04.png)
 
 5. Select `MicroPython`.
 
-![Overview](/images/05.png)
+![Overview](/fcj-ss2-workshop-003/images/05.png)
 
 6. Select `diagram.json` and paste the following content:
 
-![Overview](/images/06.png)
+![Overview](/fcj-ss2-workshop-003/images/06.png)
 
 ```json
 {
@@ -78,4 +78,4 @@ Once we have an account on Wokwi, we proceed to create a new project.
 ```
 
 1. Result:
-![Overview](/images/07.png)
+![Overview](/fcj-ss2-workshop-003/images/07.png)

@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/3-store_data/3.1-create_dynamodb/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-store_data/3.1-create_dynamodb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-store_data/3.1-create_dynamodb/"
+                />
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.1-register_new_thing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-aws_iot_core/2.1-register_new_thing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-aws_iot_core/2.1-register_new_thing/"
+                />
   </url><url>
     <loc>//localhost:1313/</loc>
     <xhtml:link
@@ -19,42 +39,232 @@
                 />
   </url><url>
     <loc>//localhost:1313/1-prepare_resource/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-prepare_resource/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-prepare_resource/"
+                />
   </url><url>
     <loc>//localhost:1313/5-sagemaker_canvas/5.1-create_dataset/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-sagemaker_canvas/5.1-create_dataset/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-sagemaker_canvas/5.1-create_dataset/"
+                />
   </url><url>
     <loc>//localhost:1313/1-prepare_resource/1.1-esp34/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-prepare_resource/1.1-esp34/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-prepare_resource/1.1-esp34/"
+                />
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-aws_iot_core/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-aws_iot_core/"
+                />
   </url><url>
     <loc>//localhost:1313/3-store_data/3.2-create_lambda/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-store_data/3.2-create_lambda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-store_data/3.2-create_lambda/"
+                />
   </url><url>
     <loc>//localhost:1313/5-sagemaker_canvas/5.2-create_model/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-sagemaker_canvas/5.2-create_model/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-sagemaker_canvas/5.2-create_model/"
+                />
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.2-create_policies/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-aws_iot_core/2.2-create_policies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-aws_iot_core/2.2-create_policies/"
+                />
   </url><url>
     <loc>//localhost:1313/1-prepare_resource/1.2-library/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-prepare_resource/1.2-library/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-prepare_resource/1.2-library/"
+                />
   </url><url>
     <loc>//localhost:1313/3-store_data/3.3-create-iot_action/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-store_data/3.3-create-iot_action/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-store_data/3.3-create-iot_action/"
+                />
   </url><url>
     <loc>//localhost:1313/3-store_data/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-store_data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-store_data/"
+                />
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.3-test-client/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-aws_iot_core/2.3-test-client/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-aws_iot_core/2.3-test-client/"
+                />
   </url><url>
     <loc>//localhost:1313/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-sagemaker_canvas/5.3-prepare_dataset_for_predict/"
+                />
   </url><url>
     <loc>//localhost:1313/5-sagemaker_canvas/5.4-predict_data/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-sagemaker_canvas/5.4-predict_data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-sagemaker_canvas/5.4-predict_data/"
+                />
   </url><url>
     <loc>//localhost:1313/2-aws_iot_core/2.4-test-esp32/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-aws_iot_core/2.4-test-esp32/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-aws_iot_core/2.4-test-esp32/"
+                />
   </url><url>
     <loc>//localhost:1313/4-example_data/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-example_data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-example_data/"
+                />
   </url><url>
     <loc>//localhost:1313/3-store_data/3.4-test/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-store_data/3.4-test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-store_data/3.4-test/"
+                />
   </url><url>
     <loc>//localhost:1313/5-sagemaker_canvas/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-sagemaker_canvas/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-sagemaker_canvas/"
+                />
   </url><url>
     <loc>//localhost:1313/6-documents/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-documents/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-documents/"
+                />
   </url><url>
     <loc>//localhost:1313/7-clear-resource/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7-clear-resource/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7-clear-resource/"
+                />
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link

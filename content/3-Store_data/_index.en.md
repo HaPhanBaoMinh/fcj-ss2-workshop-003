@@ -5,7 +5,7 @@ chapter: false
 pre: "<b> 3. </b>"
 ---
 
-![Overview](/images/31.png)
+![Overview](/fcj-ss2-workshop-003/images/31.png)
 
 Now that we have data from the device sent to AWS IoT Core, we will look for ways to store this data in DynamoDB.
 

@@ -9,13 +9,13 @@ Chúng ta sẽ sử dụng MQTT test client để test kết nối giữa thiế
 
 ### 1. Ở màn hình console chúng ta chọn **MQTT test client**.
 
-![Overview](/images/23.png)
+![Overview](/fcj-ss2-workshop-003/images/23.png)
 
 Ở đây chúng ta điền thông tin topic là **test** và chọn **Subscribe to topic**.
 
 Kéo xuống dưới chúng ta sẽ thấy một khung hiển thị message, hiện tại chúng ta chưa nhận được message nào.
 
-![Overview](/images/25.png)
+![Overview](/fcj-ss2-workshop-003/images/25.png)
 
 Bây giờ chúng ta đang lắng nghe tất cả các message từ topic **test** mỗi khi có message được publish lên topic **test** thì chúng ta sẽ nhận được message đó.
 
@@ -23,11 +23,11 @@ Bây giờ chúng ta đang lắng nghe tất cả các message từ topic **test
 
 Chúng ta sẽ gửi một message lên topic **test**, với nội dung là **Hello from AWS IoT console** và chọn **Publish**.
 
-![Overview](/images/24.png)
+![Overview](/fcj-ss2-workshop-003/images/24.png)
 
 Sau khi publish chúng ta sẽ nhận được message mà chúng ta vừa publish ở tab **Subscribe to a topic**.
 
-![Overview](/images/26.png)
+![Overview](/fcj-ss2-workshop-003/images/26.png)
 
 OK good job! 
 

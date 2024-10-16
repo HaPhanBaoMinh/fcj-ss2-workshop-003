@@ -11,11 +11,11 @@ OK giờ chúng ta sẽ tạo model từ dữ liệu mà chúng ta đã thu th�
 
 Chúng ta vào **Sagemaker** và chọn **My Models** sau đó chọn **Create new model**.
 
-![Overview](/images/70.png)
+![Overview](/fcj-ss2-workshop-003/images/70.png)
 
 Tiếp theo chúng ta đặt tên cho model và chọn **Problem type** là **Predictive analysis**.
 
-![Overview](/images/71.png)
+![Overview](/fcj-ss2-workshop-003/images/71.png)
 
 Và tiến hành tạo.
 
@@ -23,19 +23,19 @@ Và tiến hành tạo.
 
 Chúng ta chọn dataset mà chúng ta đã tạo ở bước trước.
 
-![Overview](/images/72.png)
+![Overview](/fcj-ss2-workshop-003/images/72.png)
 
 ### 3. Cấu hình model
 
 Chúng ta tiến hành chọn các thông số sẽ được sử dụng cho model.
 
-![Overview](/images/73.png)
+![Overview](/fcj-ss2-workshop-003/images/73.png)
 
 Ngoài ra chúng ta sẽ chọn các cột sẽ tiến hành dự đoán sau này.
 
 Ở đây chúng ta sẽ dự đoán cột **Temperature**.
 
-![Overview](/images/74.png)
+![Overview](/fcj-ss2-workshop-003/images/74.png)
 
 Sau đó chúng ta tiến hành chọn **Quick build** để tạo model.
 
@@ -43,6 +43,6 @@ Sau đó chúng ta tiến hành chọn **Quick build** để tạo model.
 
 Chúng ta sẽ có kết quả như sau:
 
-![Overview](/images/75.png)
+![Overview](/fcj-ss2-workshop-003/images/75.png)
 
 

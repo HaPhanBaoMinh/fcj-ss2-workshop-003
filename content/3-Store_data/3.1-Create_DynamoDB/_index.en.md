@@ -11,7 +11,7 @@ After our IoT devices send data to IoT Core, we will proceed to store this infor
 
 Select **Create table** to create a new table.
 
-![Overview](/images/32.png)
+![Overview](/fcj-ss2-workshop-003/images/32.png)
 
 ### 2. Fill in the Required Information
 
@@ -21,8 +21,8 @@ Select **Create table** to create a new table.
 
 Then proceed to select **Create** to create the table.
 
-![Overview](/images/33.png)
+![Overview](/fcj-ss2-workshop-003/images/33.png)
 
 We now have the table as follows:
 
-![Overview](/images/34.png) 
+![Overview](/fcj-ss2-workshop-003/images/34.png) 

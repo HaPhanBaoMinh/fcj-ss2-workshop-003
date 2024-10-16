@@ -11,29 +11,29 @@ Bây giờ chúng ta đã có model và dataset để dự đoán giá trị c�
 
 Chúng ta truy cập vào model mà chúng ta đã tạo ở bước trước và chọn **Predict**.
 
-![Overview](/images/78.png)
+![Overview](/fcj-ss2-workshop-003/images/78.png)
 
 Ở đây chúng ta chọn **Manual**
 
-![Overview](/images/79.png)
+![Overview](/fcj-ss2-workshop-003/images/79.png)
 
 Tiếp theo chúng ta chọn dataset mà chúng ta đã chuẩn bị ở bước trước.
 
-![Overview](/images/80.png)
+![Overview](/fcj-ss2-workshop-003/images/80.png)
 
 Và sau đó chờ đợi kết quả.
 
-![Overview](/images/81.png)
+![Overview](/fcj-ss2-workshop-003/images/81.png)
 
 ### 2. Kết quả
 
 Chúng ta sẽ có kết quả như sau:
 
-![Overview](/images/82.png)
+![Overview](/fcj-ss2-workshop-003/images/82.png)
 
 Model đã dự đoán giá trị của cột **Temperature** từ model mà chúng ta đã tạo.
 
-![Overview](/images/83.png)
+![Overview](/fcj-ss2-workshop-003/images/83.png)
 
 ### 3. Lưu ý:
 

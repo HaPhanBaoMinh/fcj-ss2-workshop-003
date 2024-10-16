@@ -9,7 +9,7 @@ Tiếp theo chúng ta sẽ tạo policy cho các ""things"" mà chúng ta đã t
 
 ### 1. Chúng ta chọn **Create a policy**.
 
-![Overview](/images/17.png)
+![Overview](/fcj-ss2-workshop-003/images/17.png)
 
 ### 2. Điền thông tin về policy của bạn.
 
@@ -22,23 +22,23 @@ Tiếp theo chúng ta sẽ tạo policy cho các ""things"" mà chúng ta đã t
 
 Sau đó chúng ta chọn **Create**.
 
-![Overview](/images/18.png)
+![Overview](/fcj-ss2-workshop-003/images/18.png)
 
 ### 3. Sau khi tạo chúng ta sẽ thấy policy của mình.
 
-![Overview](/images/19.png)
+![Overview](/fcj-ss2-workshop-003/images/19.png)
 
 ### 4. Tiếp theo chúng ta sẽ gắn policy này với certificate mà chúng ta đã tạo ở bước trước.
 
 Chúng ta vào **Certificates** và chọn **Attach policy**.
 
-![Overview](/images/20.png)
+![Overview](/fcj-ss2-workshop-003/images/20.png)
 
 Chúng ta chọn policy mà chúng ta vừa tạo và chọn **Attach polices**.
 
-![Overview](/images/21.png)
+![Overview](/fcj-ss2-workshop-003/images/21.png)
 
 ### 5. Sau khi gắn policy chúng ta sẽ thấy policy đã được gắn với certificate.
 
-![Overview](/images/22.png)
+![Overview](/fcj-ss2-workshop-003/images/22.png)
 

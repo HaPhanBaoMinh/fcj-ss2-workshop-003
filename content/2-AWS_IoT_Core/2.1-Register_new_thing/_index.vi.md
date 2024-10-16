@@ -9,7 +9,7 @@ Bước đầu tiên để sử dụng AWS IoT Core là chúng ta cần đăng k
 
 ### 1. Chúng ta tuy cập vào [AWS IoT Core](https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard) và chọn **Create thing**.
 
-![Overview](/images/11.png)
+![Overview](/fcj-ss2-workshop-003/images/11.png)
 ### 2. Điền thông tin về thiết bị của bạn. Ở đây mình điền thông tin như sau:
 
 Ở đây ngoài tên thì còn có nhiều thông tin khác như:
@@ -25,7 +25,7 @@ Những thông tin này sẽ giúp bạn quản lý thiết bị của mình m�
 
 Sau đó các bạn chọn **Next**.
 
-![Overview](/images/12.png)
+![Overview](/fcj-ss2-workshop-003/images/12.png)
 
 ### 3. Tạo Certificates.
 
@@ -33,19 +33,19 @@ Sau đó các bạn chọn **Next**.
 
 Ở đây mình chọn **Auto-generate a new certificate** và chọn **Next**.
 
-![Overview](/images/13.png)
+![Overview](/fcj-ss2-workshop-003/images/13.png)
 
 ### 4. Attach a policy.
 
 Chúng ta sẽ tạo policy sau, ở bước này chúng ta chọn **Create thing**
 
-![Overview](/images/14.png)
+![Overview](/fcj-ss2-workshop-003/images/14.png)
 
 ### 5. Sau khi tạo chúng ta hãy tải các file Certificates về máy.
 
-![Overview](/images/15.png)
+![Overview](/fcj-ss2-workshop-003/images/15.png)
 
-![Overview](/images/16.png)
+![Overview](/fcj-ss2-workshop-003/images/16.png)
 
 
 

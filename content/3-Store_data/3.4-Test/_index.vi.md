@@ -11,9 +11,9 @@ Có vẻ mọi thứ đã ổn bây giờ chúng ta hãy thử bật ESP32 lên 
 - AWS IoT Core sẽ xử lý dữ liệu và lưu vào DynamoDB.
 - Chúng ta sẽ kiểm tra xem dữ liệu đã được lưu vào DynamoDB chưa.
 
-![Overview](/images/46.png)
+![Overview](/fcj-ss2-workshop-003/images/46.png)
 
-![Overview](/images/47.png)
+![Overview](/fcj-ss2-workshop-003/images/47.png)
 
 Như các bạn thấy, dữ liệu đã được lưu vào DynamoDB.
 

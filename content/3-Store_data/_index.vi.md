@@ -5,7 +5,7 @@ chapter: false
 pre: "<b> 3. </b>"
 ---
 
-![Overview](/images/31.png)
+![Overview](/fcj-ss2-workshop-003/images/31.png)
 
 Vậy là chúng ta đã có dữ liệu từ thiết bị được gửi lên AWS IoT Core, tiếp theo chúng ta sẽ tìm cách lưu trữ những dự liệu này vào DynamoDB.
 

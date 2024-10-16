@@ -7,7 +7,7 @@ pre: " <b> 1. </b> "
 
 # Predicting Temperature & Humidity from ESP32 Data via IoT Core
 
-![Overview](/images/00.png)
+![Overview](/fcj-ss2-workshop-003/images/00.png)
 
 ## 1. Overview
 

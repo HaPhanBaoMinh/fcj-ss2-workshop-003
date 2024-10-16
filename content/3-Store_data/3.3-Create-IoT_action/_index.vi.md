@@ -13,7 +13,7 @@ Chúng ta sẽ tạo một IoT rule và action để gửi thông tin từ IoT C
 - Chọn **Message routing** và chọn **Rules**.
 - Chọn **Create rule**. 
 
-![Overview](/images/40.png)
+![Overview](/fcj-ss2-workshop-003/images/40.png)
 
 
 ### 2. Điền các thông tin cần thiết
@@ -21,22 +21,22 @@ Chúng ta sẽ tạo một IoT rule và action để gửi thông tin từ IoT C
 - **Name**: Tên của rule.
 - **Description**: Mô tả về rule.
 
-![Overview](/images/41.png)
+![Overview](/fcj-ss2-workshop-003/images/41.png)
 
 - Điền thông tin về query statement:
 
-![Overview](/images/42.png)
+![Overview](/fcj-ss2-workshop-003/images/42.png)
 
 - Ở phần **Set one or more actions** chọn **Add action**.
 - Chọn **Lambda** mà chúng ta đã tạo ở bước trước đó.
 
-![Overview](/images/43.png)
+![Overview](/fcj-ss2-workshop-003/images/43.png)
 
 - Review lại thông tin và tiến hành tạo.
 
-![Overview](/images/44.png)
+![Overview](/fcj-ss2-workshop-003/images/44.png)
 
 Lúc này khi quay lại trang Lambda function chúng ta sẽ thấy được một trigger mới được tạo.
 
-![Overview](/images/45.png)
+![Overview](/fcj-ss2-workshop-003/images/45.png)
 

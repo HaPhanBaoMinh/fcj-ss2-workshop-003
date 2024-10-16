@@ -12,7 +12,7 @@ Chún ta sẽ tạo một lambda function để xử lý dữ liệu trước kh
 - Truy cập vào **Lambda** trên console của AWS.
 - Chọn **Create function** để tạo một lambda function mới.
   
-![Overview](/images/35.png)
+![Overview](/fcj-ss2-workshop-003/images/35.png)
 
 ### 2. Điền các thông tin cần thiết
 
@@ -20,7 +20,7 @@ Chún ta sẽ tạo một lambda function để xử lý dữ liệu trước kh
 - **Runtime**: Chọn runtime cho lambda function, ở đây mình chọn **Python 3.11**.
 - Sau đó chọn **Create function** để tạo lambda function.
 
-![Overview](/images/36.png)
+![Overview](/fcj-ss2-workshop-003/images/36.png)
 
 ### 3. Update role của lambda function
 
@@ -28,16 +28,16 @@ Chún ta sẽ tạo một lambda function để xử lý dữ liệu trước kh
 
 - Chúng ta có thể click vào đây để được chuyển tới trang IAM role của lambda function.
 
-![Overview](/images/37.png)
+![Overview](/fcj-ss2-workshop-003/images/37.png)
 
 ### 4. Thêm policy
 
 - Ở đây chúng ta sẽ thêm một policy mới cho lambda function.
 - Ở đây để thuận chúng ta sẽ chọn policy **AmazonDynamoDBFullAccess**.
 
-![Overview](/images/38.png)
+![Overview](/fcj-ss2-workshop-003/images/38.png)
 
-![Overview](/images/39.png)
+![Overview](/fcj-ss2-workshop-003/images/39.png)
 
 ### 5. Update code cho lambda function
 

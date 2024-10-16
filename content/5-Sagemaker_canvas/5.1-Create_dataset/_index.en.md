@@ -17,16 +17,16 @@ We go to **SageMaker** and select **Datasets**, then choose **Import data**.
 
 We select **Tabular** and proceed to choose the CSV file that we exported from DynamoDB.
 
-![Overview](/images/66.png)
+![Overview](/fcj-ss2-workshop-003/images/66.png)
 
 We can preview the data before importing.
 
-![Overview](/images/67.png)
+![Overview](/fcj-ss2-workshop-003/images/67.png)
 
 Proceed to **Create dataset**.
 
-![Overview](/images/68.png)
+![Overview](/fcj-ss2-workshop-003/images/68.png)
 
 Check back on the **Datasets** page, and we see that we have successfully created the dataset.
 
-![Overview](/images/69.png)
+![Overview](/fcj-ss2-workshop-003/images/69.png)

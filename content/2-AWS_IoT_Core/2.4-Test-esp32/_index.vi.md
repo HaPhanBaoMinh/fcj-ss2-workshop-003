@@ -16,7 +16,7 @@ Chúng ta vào aws shell và chạy lệnh sau:
 
 Ta sẽ nhận được thông tin như sau:
 
-![Overview](/images/28.png)
+![Overview](/fcj-ss2-workshop-003/images/28.png)
 
 Đây là thông tin endpoint của MQTT broker mà chúng ta sẽ sử dụng để kết nối với AWS IoT Core.
 
@@ -132,11 +132,11 @@ while True:
 ```
 Khi chúng ta chạy file main.py trên ESP32 thì chúng ta sẽ thấy thông tin về nhiệt độ và độ ẩm được hiển thị trên LCD và cũng được publish lên topic **test** trên AWS IoT Core.
 
-![Overview](/images/29.png)
+![Overview](/fcj-ss2-workshop-003/images/29.png)
 
 Chúng ta kiểm tra trên MQTT test client thì chúng ta sẽ thấy message được publish lên topic **test**.
 
-![Overview](/images/30.png)
+![Overview](/fcj-ss2-workshop-003/images/30.png)
 
 Good job!
 

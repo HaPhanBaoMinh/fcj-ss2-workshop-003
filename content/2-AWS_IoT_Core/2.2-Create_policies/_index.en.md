@@ -9,7 +9,7 @@ Next, we will create a policy so that the "things" we created in the previous st
 
 ### 1. Select **Create a policy**.
 
-![Overview](/images/17.png)
+![Overview](/fcj-ss2-workshop-003/images/17.png)
 
 ### 2. Fill in your policy details.
 
@@ -22,23 +22,23 @@ Here, I entered the following information:
 
 Then select **Create**.
 
-![Overview](/images/18.png)
+![Overview](/fcj-ss2-workshop-003/images/18.png)
 
 ### 3. After creating, you will see your policy.
 
-![Overview](/images/19.png)
+![Overview](/fcj-ss2-workshop-003/images/19.png)
 
 ### 4. Next, we will attach this policy to the certificate we created earlier.
 
 Go to **Certificates** and select **Attach policy**.
 
-![Overview](/images/20.png)
+![Overview](/fcj-ss2-workshop-003/images/20.png)
 
 Select the policy you just created and choose **Attach policies**.
 
-![Overview](/images/21.png)
+![Overview](/fcj-ss2-workshop-003/images/21.png)
 
 ### 5. After attaching, you will see the policy linked to the certificate.
 
-![Overview](/images/22.png)
+![Overview](/fcj-ss2-workshop-003/images/22.png)
 
