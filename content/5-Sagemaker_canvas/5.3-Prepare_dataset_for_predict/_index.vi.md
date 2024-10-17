@@ -2,7 +2,7 @@
 title: "Chuẩn bị dataset cho việc dự đoán"
 weight: 3
 chapter: false
-pre: " <b> 5.3. </b> "
+pre: "<b> 5.3. </b>"
 ---
 
 Bây giờ chúng ta đã có model mà không cần phải viết 1 dòng code nào. So cool!!!

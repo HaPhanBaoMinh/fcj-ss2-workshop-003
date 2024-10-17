@@ -2,7 +2,7 @@
 title: "Conclusion and References"
 weight: 6
 chapter: false
-pre: " <b> 6. </b> "
+pre: "<b> 6. </b>"
 ---
 
 ## Conclusion

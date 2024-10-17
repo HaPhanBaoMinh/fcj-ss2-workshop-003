@@ -2,7 +2,7 @@
 title: "MQTT Test ESP32"
 weight: 4
 chapter: false
-pre: " <b> 2.4. </b> "
+pre: "<b> 2.4. </b>"
 ---
 
 We will use the ESP32 to test the connection between the device and AWS IoT Core.

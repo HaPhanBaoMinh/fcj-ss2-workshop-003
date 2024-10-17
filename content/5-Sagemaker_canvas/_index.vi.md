@@ -2,7 +2,7 @@
 title: "Sagemaker canvas"
 weight: 5
 chapter: false
-pre: " <b> 5. </b> "
+pre: "<b> 5. </b>"
 ---
 
 ![Overview](/fcj-ss2-workshop-003/images/56.png)

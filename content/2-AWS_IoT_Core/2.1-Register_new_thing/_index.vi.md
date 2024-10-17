@@ -2,7 +2,7 @@
 title: "Đăng kí thiết bị"
 weight: 1
 chapter: false
-pre: " <b> 2.1. </b> "
+pre: "<b> 2.1. </b>"
 ---
 
 Bước đầu tiên để sử dụng AWS IoT Core là chúng ta cần đăng kí một thiết bị. Trong trường hợp của chúng ta thì đó là ESP32.

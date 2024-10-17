@@ -2,7 +2,7 @@
 title: "Prepare Dataset"
 weight: 1
 chapter: false
-pre: " <b> 5.1. </b> "
+pre: "<b> 5.1. </b>"
 ---
 
 Before we start building our machine learning model, we need to prepare the dataset for our model.

@@ -2,7 +2,7 @@
 title: "Chuẩn bị dataset"
 weight: 1
 chapter: false
-pre: " <b> 5.1. </b> "
+pre: "<b> 5.1. </b>"
 ---
 
 Trước khi chúng ta bắt đầu xây dựng mô hình machine learning, chúng ta cần chuẩn bị dataset cho mô hình của mình.

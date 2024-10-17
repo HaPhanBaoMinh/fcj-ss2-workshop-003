@@ -2,7 +2,7 @@
 title: "Preparing Sample Data"
 weight: 4
 chapter: false
-pre: " <b> 4. </b> "
+pre: "<b> 4. </b>"
 ---
 
 To make the data preparation process easier and save time, we will use some available sample data and proceed to import it into DynamoDB.

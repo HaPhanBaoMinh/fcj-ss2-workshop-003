@@ -2,7 +2,7 @@
 title: "Kết luận và tài liệu tham khảo"
 weight: 6
 chapter: false
-pre: " <b> 6. </b> "
+pre: "<b> 6. </b>"
 ---
 
 ## Kết luận

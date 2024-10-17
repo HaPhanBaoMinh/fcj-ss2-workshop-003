@@ -2,7 +2,7 @@
 title: "Tạo bảng trong DynamoDB"
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: "<b> 3.1. </b>"
 ---
 
 Sau khi các thiết bị IoT của chúng ta gửi data lên cho IoT core chúng ta sẽ tiến hành lưu các thông tin này lại, có nhiều các để lưu trữ thông tin này, ở đây mình dùng DynamoDb để lưu trữ các dữ liệu trên.

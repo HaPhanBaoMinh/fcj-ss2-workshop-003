@@ -2,7 +2,7 @@
 title: "Preparing Dataset for Prediction"
 weight: 3
 chapter: false
-pre: " <b> 5.3. </b> "
+pre: "<b> 5.3. </b>"
 ---
 
 Now we have a model without having to write a single line of code. So cool!!!

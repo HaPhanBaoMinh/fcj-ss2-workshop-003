@@ -2,7 +2,7 @@
 title: "Create Lambda"
 weight: 2
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: "<b> 3.2. </b>"
 ---
 
 We will create a lambda function to process the data before storing it in DynamoDB.

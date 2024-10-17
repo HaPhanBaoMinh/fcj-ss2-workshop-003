@@ -2,7 +2,7 @@
 title: "Required Libraries"
 weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: "<b> 1.2. </b>"
 ---
 
 ![Overview](/fcj-ss2-workshop-003/images/08.png)

@@ -2,7 +2,7 @@
 title: "Create a Table in DynamoDB"
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: "<b> 3.1. </b>"
 ---
 
 After our IoT devices send data to IoT Core, we will proceed to store this information. There are many ways to store this data; here, I will use DynamoDB to store it.

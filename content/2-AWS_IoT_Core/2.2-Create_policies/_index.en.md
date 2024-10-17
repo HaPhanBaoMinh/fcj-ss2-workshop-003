@@ -2,7 +2,7 @@
 title: "Create Policy"
 weight: 2
 chapter: false
-pre: " <b> 2.2. </b> "
+pre: "<b> 2.2. </b>"
 ---
 
 Next, we will create a policy so that the "things" we created in the previous step can access AWS IoT Core resources.

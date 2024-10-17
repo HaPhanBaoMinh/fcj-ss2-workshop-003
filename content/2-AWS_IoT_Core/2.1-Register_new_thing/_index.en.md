@@ -2,7 +2,7 @@
 title: "Device Registration"
 weight: 1
 chapter: false
-pre: " <b> 2.1. </b> "
+pre: "<b> 2.1. </b>"
 ---
 
 The first step to using AWS IoT Core is registering a device. In our case, it's the ESP32.

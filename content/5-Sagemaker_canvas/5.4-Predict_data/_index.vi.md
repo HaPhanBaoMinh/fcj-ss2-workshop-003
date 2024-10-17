@@ -2,7 +2,7 @@
 title: "Tiến hành dự đoán"
 weight: 4
 chapter: false
-pre: " <b> 5.4. </b> "
+pre: "<b> 5.4. </b>"
 ---
 
 Bây giờ chúng ta đã có model và dataset để dự đoán giá trị của cột **Temperature**.

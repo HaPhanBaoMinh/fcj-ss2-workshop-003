@@ -2,7 +2,7 @@
 title: "Cài đặt ESP32"
 weight: 1
 chapter: false
-pre: " <b> 1.1. </b> "
+pre: "<b> 1.1. </b>"
 ---
 
 ![Overview](/fcj-ss2-workshop-003/images/02.png)

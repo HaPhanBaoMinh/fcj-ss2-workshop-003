@@ -2,7 +2,7 @@
 title: "Giới thiệu"
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: "<b> 1. </b>"
 ---
 
 # Dự Đoán Nhiệt Độ Từ Dữ Liệu ESP32 bằng AWS SageMaker Canvas

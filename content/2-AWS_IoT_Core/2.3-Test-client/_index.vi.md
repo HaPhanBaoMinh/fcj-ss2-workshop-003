@@ -2,7 +2,7 @@
 title: "MQTT test client"
 weight: 3
 chapter: false
-pre: " <b> 2.3. </b> "
+pre: "<b> 2.3. </b>"
 ---
 
 Chúng ta sẽ sử dụng MQTT test client để test kết nối giữa thiết bị và AWS IoT Core.

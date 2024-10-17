@@ -2,7 +2,7 @@
 title: "Clear resources (Important)"
 weight: 7
 chapter: false
-pre: " <b> 7. </b> "
+pre: "<b> 7. </b>"
 ---
 
 Đừng quên xóa các tài nguyên mà bạn đã tạo để tránh bị tính phí không cần thiết.

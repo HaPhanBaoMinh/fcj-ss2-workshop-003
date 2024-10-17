@@ -2,7 +2,7 @@
 title: "Chuẩn bị data mẫu"
 weight: 4
 chapter: false
-pre: " <b> 4. </b> "
+pre: "<b> 4. </b>"
 ---
 
 Để thuận tiện và đỡ tốn thời gian cho việc chuẩn bị data, chúng ta sẽ sử dụng một số data mẫu có sẵn và tiến hàn import vào DynamoDB.

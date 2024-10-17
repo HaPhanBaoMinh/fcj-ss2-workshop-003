@@ -2,7 +2,7 @@
 title: "Tạo Lambda"
 weight: 2
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: "<b> 3.2. </b>"
 ---
 
 Chún ta sẽ tạo một lambda function để xử lý dữ liệu trước khi lưu vào DynamoDB.

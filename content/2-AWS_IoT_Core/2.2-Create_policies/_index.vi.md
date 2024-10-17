@@ -2,7 +2,7 @@
 title: "Tạo policy"
 weight: 2
 chapter: false
-pre: " <b> 2.2. </b> "
+pre: "<b> 2.2. </b>"
 ---
 
 Tiếp theo chúng ta sẽ tạo policy cho các ""things"" mà chúng ta đã tạo ở bước trước có thể truy cập các AWS IoT Core resources.

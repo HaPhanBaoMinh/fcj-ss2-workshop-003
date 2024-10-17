@@ -2,7 +2,7 @@
 title: "Tạo model"
 weight: 2
 chapter: false
-pre: " <b> 5.2. </b> "
+pre: "<b> 5.2. </b>"
 ---
 
 OK giờ chúng ta sẽ tạo model từ dữ liệu mà chúng ta đã thu thập được ở bước trước.
