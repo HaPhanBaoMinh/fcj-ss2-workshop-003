@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-# Predicting Temperature & Humidity from ESP32 Data via IoT Core
+# Predicting Temperature from ESP32 Data via AWS SageMaker Canvas
 
 ![Overview](/fcj-ss2-workshop-003/images/00.png)
 

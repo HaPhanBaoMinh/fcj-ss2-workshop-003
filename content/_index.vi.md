@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-# Dự Đoán Nhiệt Độ & Độ Ẩm Từ Dữ Liệu ESP32 qua IoT Core
+# Dự Đoán Nhiệt Độ Từ Dữ Liệu ESP32 bằng AWS SageMaker Canvas
 
 ![Overview](/fcj-ss2-workshop-003/images/00.png)
 
